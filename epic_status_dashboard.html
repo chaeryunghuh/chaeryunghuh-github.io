@@ -6,23 +6,25 @@
         <title>대분류 별 업무 완료 현황</title>
         
     <style>
-        body { font-family: 'Malgun Gothic', sans-serif; margin: 20px; background-color: #f8f9fa; }
-        h2 { color: #333; }
-        .chart-container { display: flex; flex-direction: column; gap: 8px; } /* 바 간격 조정 */
-        .bar-wrapper { display: flex; align-items: center; gap: 10px; height: 24px; } /* 바 높이 수정 */
-        .bar-label { width: 200px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; color: #555; }
+        body { font-family: 'Malgun Gothic', sans-serif; margin: 0; padding: 20px; background-color: #fff; } /* 배경 흰색, 패딩으로 여백 */
+        .dashboard-wrapper { max-width: 800px; } /* 전체 컨테이너 폭 제한 */
+        h2 { color: #333; margin-top: 0; margin-bottom: 15px; } /* 제목 위쪽, 아래쪽 여백 조정 */
+        .chart-container { display: flex; flex-direction: column; gap: 8px; }
+        .bar-wrapper { display: flex; align-items: center; gap: 10px; height: 24px; }
+        .bar-label { width: 150px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; color: #555; }
         .bar-chart { flex-grow: 1; display: flex; height: 100%; border-radius: 4px; overflow: hidden; background-color: #e9ecef; }
         .bar { display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-size: 11px; font-weight: bold; transition: opacity 0.2s; cursor: pointer; text-decoration: none; }
         .bar:hover { opacity: 0.8; }
-        .bar.incomplete { background-color: #adb5bd; } /* 미완료: 회색 */
-        .bar.completed { background-color: #28a745; } /* 완료: 초록색 */
+        .bar.incomplete { background-color: #adb5bd; }
+        .bar.completed { background-color: #28a745; }
         .bar-total { font-size: 13px; font-weight: bold; color: #333; min-width: 30px; text-align: left; text-decoration: none; }
     </style>
     
     </head>
     <body>
-        <h2>대분류 별 업무 완료 현황</h2>
-        <div class="chart-container">
+        <div class="dashboard-wrapper">
+            <h2>대분류 별 업무 완료 현황</h2>
+            <div class="chart-container">
             <div class="bar-wrapper">
                 <div class="bar-label" title="지역">지역</div>
                 <div class="bar-chart">
@@ -183,7 +185,8 @@
                 <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22" target="_blank" class="bar-total">1</a>
             </div>
             </div>
-        <p style="font-size: 12px; color: #888; text-align: right;">Last updated: 2026-03-16 21:21:51</p>
+            <p style="font-size: 12px; color: #888; text-align: right; margin-top: 15px;">Last updated: 2026-03-16 21:24:10</p>
+        </div>
     </body>
     </html>
     
