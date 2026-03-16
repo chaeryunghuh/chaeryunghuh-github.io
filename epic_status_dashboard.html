@@ -6,9 +6,16 @@
         <title>대분류 별 업무 완료 현황</title>
         
     <style>
-        body { font-family: 'Malgun Gothic', sans-serif; margin: 0; padding: 20px; background-color: #fff; } /* 배경 흰색, 패딩으로 여백 */
-        .dashboard-wrapper { max-width: 800px; } /* 전체 컨테이너 폭 제한 */
-        h2 { color: #333; margin-top: 0; margin-bottom: 15px; } /* 제목 위쪽, 아래쪽 여백 조정 */
+        body { font-family: 'Malgun Gothic', sans-serif; margin: 0; padding: 20px; background-color: #fff; }
+        .dashboard-wrapper { max-width: 800px; margin: 0 auto; } /* 가로 폭 제한 및 중앙 정렬 */
+        h2 { 
+            color: #333; 
+            text-align: center; /* 제목 가운데 정렬 */
+            font-size: 1.6em;   /* 폰트 크기 증가 */
+            font-weight: 600;   /* 폰트 굵기 조정 */
+            margin-top: 0; 
+            margin-bottom: 25px; /* 제목 아래 여백 증가 */
+        }
         .chart-container { display: flex; flex-direction: column; gap: 8px; }
         .bar-wrapper { display: flex; align-items: center; gap: 10px; height: 24px; }
         .bar-label { width: 150px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; color: #555; }
@@ -28,9 +35,9 @@
             <div class="bar-wrapper">
                 <div class="bar-label" title="지역">지역</div>
                 <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 11.875%;">19</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 88.125%;">141</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 11.801242236024844%;">19</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 88.19875776397515%;">142</a>
                 </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22" target="_blank" class="bar-total">160</a>
+                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22" target="_blank" class="bar-total">161</a>
             </div>
             
             <div class="bar-wrapper">
@@ -185,7 +192,7 @@
                 <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22" target="_blank" class="bar-total">1</a>
             </div>
             </div>
-            <p style="font-size: 12px; color: #888; text-align: right; margin-top: 15px;">Last updated: 2026-03-16 21:24:10</p>
+            <p style="font-size: 12px; color: #888; text-align: right; margin-top: 15px;">Last updated: 2026-03-16 21:28:26</p>
         </div>
     </body>
     </html>
