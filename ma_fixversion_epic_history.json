@@ -3859,5 +3859,1291 @@
       },
       "removed_count": 1
     }
+  },
+  "2026-03-18": {
+    "snapshot": {
+      "ME_M6_2606": [
+        [
+          "MA-28893",
+          "[ME] \uae30\ubcf8 \uc804\ud22c \uc2dc\uc2a4\ud15c 5\ucc28"
+        ],
+        [
+          "MA-27679",
+          "[ME] \uad50\uc5ed \uc0c1\uc810 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-30992",
+          "[ME] [UI \ub9ac\ub274\uc5bc] HUD UI 1\ucc28"
+        ],
+        [
+          "MA-24565",
+          "[ME] \uad50\uc5ed \uc2dc\uc2a4\ud15c 2\ucc28"
+        ],
+        [
+          "MA-24562",
+          "[ME] \ub0ad\ub9cc\uc12c 2\ucc28"
+        ],
+        [
+          "MA-28940",
+          "[ME] \uc778\ud130\ub809\uc158 \uc2dc\uc2a4\ud15c 2\ucc28"
+        ],
+        [
+          "MA-27651",
+          "[ME] \uc694\ub9ac \uc7ac\ub2a5 4\ucc28"
+        ],
+        [
+          "MA-24278",
+          "[ME] [\ub0b4\ubd80] \ub77c\ud750 \uc655\uc131 (\ub9ac\ub274\uc5bc)"
+        ],
+        [
+          "MA-28957",
+          "[ME] \uc544\uc6c3\uac8c\uc784 & \ub85c\ube44 \ub9ac\ub274\uc5bc 2\ucc28"
+        ],
+        [
+          "MA-28887",
+          "[ME] \ub300\ubbf8\uc9c0 \uacc4\uc0b0 2\ucc28"
+        ],
+        [
+          "MA-24733",
+          "[ME] \uc2dc\ub4dc \uc2a4\ub137\ud0c0 \ubd81 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-17610",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ubaa8\ub974\ubc14 \uc544\uc77c"
+        ],
+        [
+          "MA-30994",
+          "[ME] [UI \ub9ac\ub274\uc5bc] \ucf58\ud150\uce20 UI: \ud31d\uc5c5 1\ucc28"
+        ],
+        [
+          "MA-24736",
+          "[ME] \uc624\uc2a4\ub098 \uc0ac\uc77c \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24058",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G0 1\ucc28"
+        ],
+        [
+          "MA-15252",
+          "[ME] [\ub0b4\ubd80] \ud0c0\ub77c (\ub9ac\ub274\uc5bc)"
+        ],
+        [
+          "MA-28941",
+          "[ME] \ud504\ub78d \uc2dc\uc2a4\ud15c 2\ucc28"
+        ],
+        [
+          "MA-17612",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ube14\ub77c\uace0 \ud3c9\uc6d0"
+        ],
+        [
+          "MA-27066",
+          "[ME] \uc81c\uc791 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-28951",
+          "[ME] M6 \uc0ac\uc6b4\ub4dc \uc804\uc6a9 \uc5c5\ubb34"
+        ],
+        [
+          "MA-24280",
+          "[ME] [\ub0b4\ubd80] \ubb38\ud558\uc774\ub4dc(\ud29c\ud1a0\ub9ac\uc5bc \uc9c0\uc5ed)"
+        ],
+        [
+          "MA-23941",
+          "[ME] \uc544\uc774\ud15c \ub124\ube44\uac8c\uc774\ud130"
+        ],
+        [
+          "MA-24365",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ud0c0\ub77c \uc2e4\ub0b4"
+        ],
+        [
+          "MA-24669",
+          "[ME] \ube14\ub77c\uace0 \ud3c9\uc6d0 NPC \uc81c\uc791 (\uc640\uc778\uac1c\ud3b8\uc73c\ub85c \uc81c\uc791\ud558\uc9c0\uc54a\uc74c)"
+        ],
+        [
+          "MA-30997",
+          "[ME] [UI \ub9ac\ub274\uc5bc] \uc544\uc774\ucf58 \uc791\uc5c5 1\ucc28"
+        ],
+        [
+          "MA-35107",
+          "[ME] \uc6b8\ub77c \ub358\uc804 \uc778\uc2a4\ud134\uc2a4 \ub358\uc804\ud654"
+        ],
+        [
+          "MA-30854",
+          "[ME] \ud018\uc2a4\ud2b8 \uc2dc\uc2a4\ud15c 4\ucc28"
+        ],
+        [
+          "MA-30865",
+          "[ME] \ud2f0\ub974 \ucf54\ub124\uc77c \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 (\uc2e4\ub0b4)"
+        ],
+        [
+          "MA-24612",
+          "[ME] [\ub0b4\ubd80+\uc678\uc8fc] \ub77c\ud750 \uc655\uc131 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-28949",
+          "[ME] \ucee8\ub514\uc158 \uc2dc\uc2a4\ud15c 2\ucc28"
+        ],
+        [
+          "MA-32932",
+          "[ME] \uc624\ud074\ub8e8\uc804 \uc2dc\uc2a4\ud15c (\uad6c \uceec\ub9c1 \uc2dc\uc2a4\ud15c) 2\ucc28"
+        ],
+        [
+          "MA-30993",
+          "[ME] [UI \ub9ac\ub274\uc5bc] \ucf58\ud150\uce20 UI: \uc804\uccb4\ud654\uba74 1\ucc28"
+        ],
+        [
+          "MA-33339",
+          "[ME] \uae30\ubcf8 \uce74\uba54\ub77c \uae30\ub2a5 \uad6c\ud604 3\ucc28"
+        ],
+        [
+          "MA-17628",
+          "[ME] [\ub0b4\ubd80] \ucf00\uc624 \uc12c"
+        ],
+        [
+          "MA-24607",
+          "[ME] [\uc678\uc8fc] \uc13c \ub9c8\uc774 \ud3c9\uc6d0 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-28947",
+          "[ME] Race \ub808\uc774\uc2a4 \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-24758",
+          "[ME] \ubb38\ud558\uc774\ub4dc(\ud29c\ud1a0\ub9ac\uc5bc \uc9c0\uc5ed) \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 1\ucc28"
+        ],
+        [
+          "MA-29037",
+          "[ME] NPC \uc2dc\uc2a4\ud15c 4\ucc28 (\ub300\ud654 \uc2ec\ud654 \uae30\ub2a5)"
+        ],
+        [
+          "MA-24611",
+          "[ME] [\uc678\uc8fc] \uc774\uba58 \ub9c8\ud558 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-20766",
+          "[ME] \uadfc\uc811 \uc804\ud22c \uc7ac\ub2a5 2\ucc28"
+        ],
+        [
+          "MA-31761",
+          "[ME] \uacf5\uc6a9 \uac00\uc774\ub4dc \uc778\ub514\ucf00\uc774\ud130 2\ucc28"
+        ],
+        [
+          "MA-30336",
+          "[ME] \ub4dc\ub78d\uba54\uc2dc \uad6c\ud604 3\ucc28"
+        ],
+        [
+          "MA-28782",
+          "[ME] \uc544\uc774\ud15c \uac1c\uc870 & \uac15\ud654 2\ucc28"
+        ],
+        [
+          "MA-25541",
+          "[ME] \uc0dd\ud65c \ud504\ub9ac\uc14b \uc2dc\uc2a4\ud15c (\uad6c \ucd94\uc7a5\uc2ac)"
+        ],
+        [
+          "MA-30995",
+          "[ME] [UI \ub9ac\ub274\uc5bc] \uc544\uc774\ud15c UI 1\ucc28"
+        ],
+        [
+          "MA-29032",
+          "[ME] \uc778\uc2a4\ud134\uc2a4 \ub358\uc804 \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-24060",
+          "[ME] \uba54\uc2e0\uc800 \uc11c\ubc84"
+        ],
+        [
+          "MA-27064",
+          "[ME] \ucc44\uc9d1 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-17618",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \uc2ac\ub9ac\uc544\ube0c \ud03c\ub9b0"
+        ],
+        [
+          "MA-28950",
+          "[ME] \ucc9c\uccb4 & \ub0a0\uc528 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24732",
+          "[ME] \uc2dc\ub4dc \uc2a4\ub137\ud0c0 \ub0a8 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-17705",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \uc2ac\ub9ac\uc544\ube0c \ubbf8\uc2dc"
+        ],
+        [
+          "MA-17630",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ucf54\ub9ac\ube0c \uacc4\uace1"
+        ],
+        [
+          "MA-31210",
+          "[ME] \ub9ac\uc804 \uc2dc\uc2a4\ud15c 3\ucc28(\uad6c \ub9ac\uc804 \ubca0\ub9ac\uc5d0\uc774\uc158 3\ucc28)"
+        ],
+        [
+          "MA-16614",
+          "[ME] \uc5fc\uc0c9 \uc2dc\uc2a4\ud15c 2\ucc28"
+        ],
+        [
+          "MA-24730",
+          "[ME] \ud0c0\ub77c (\ub9ac\ub274\uc5bc) \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-31100",
+          "[ME] \uce90\ub9ad\ud130 \uc6b0\ud074\ub9ad \uba54\ub274 1\ucc28"
+        ],
+        [
+          "MA-27366",
+          "[ME] [\ub0b4\ubd80] \ub358\ubc14\ud2bc 2\ucc28 (\ub9ac\ub274\uc5bc)"
+        ],
+        [
+          "MA-16663",
+          "[ME] \ud3ab \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-14274",
+          "[ME] \uc6b0\ud3b8 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-30991",
+          "[ME] [UI \ub9ac\ub274\uc5bc] \uae30\ubc18 UI 1\ucc28"
+        ],
+        [
+          "MA-24614",
+          "[ME] [\uc678\uc8fc] \ubca8\ubc14\uc2a4\ud2b8 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-27453",
+          "[ME] \uc758\uc790\ud615(\uc124\uce58\ud615) \ud504\ub78d 3\ucc28"
+        ],
+        [
+          "MA-28943",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G0 \uc778\uc2a4\ud134\uc2a4 \ub358\uc804"
+        ],
+        [
+          "MA-30996",
+          "[ME] [UI \ub9ac\ub274\uc5bc] \ub85c\ub529 \ud654\uba74 1\ucc28"
+        ],
+        [
+          "MA-25924",
+          "[ME] \ucef7\uc2e0 \uc2dc\uc2a4\ud15c 4\ucc28"
+        ],
+        [
+          "MA-24613",
+          "[ME] [\uc678\uc8fc] \ud0c8\ud2f4 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-17626",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \uc624\uc2a4\ub098 \uc0ac\uc77c"
+        ],
+        [
+          "MA-27922",
+          "[ME] M6 \uc544\uc774\ud15c StringID \ubc0f ExtraDataXML \ud3ec\ud305"
+        ],
+        [
+          "MA-27065",
+          "[ME] \uac00\uacf5 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-20767",
+          "[ME] \uad81\uc220 \uc7ac\ub2a5 2\ucc28"
+        ],
+        [
+          "MA-33794",
+          "[ME] \uc790\uc774\uc5b8\ud2b8 \ub098\uc774\ub300 \ubcc4 \uccb4\ud615 \ube44\uc728 \uac1c\uc120"
+        ],
+        [
+          "MA-28944",
+          "[ME] \uc778\ubca4\ud1a0\ub9ac \uc544\uc774\ud15c \uc18c\ucf13\ud654 3\ucc28"
+        ],
+        [
+          "MA-28948",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G0 \ucef7\uc2e0"
+        ],
+        [
+          "MA-27607",
+          "[ME] \uae30\ubcf8 \uc0dd\ud65c \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-27911",
+          "[ME] Feature/Locale \uc2dc\uc2a4\ud15c (\ud53c\uccd0/\ub85c\ucf00\uc77c)"
+        ],
+        [
+          "MA-30235",
+          "[ME] M6 \ub808\ubca8 \uba38\ud2f0\ub9ac\uc5bc \ub9c8\uc774\uadf8\ub808\uc774\uc158"
+        ],
+        [
+          "MA-24728",
+          "[ME] \uae30\ubcf8 \ud654\uba74 HUD 4\ucc28"
+        ],
+        [
+          "MA-30234",
+          "[ME] M6 \ub808\ubca8 \ud3f4\ub9ac\uc2f1"
+        ],
+        [
+          "MA-30990",
+          "[ME] [UI \ub9ac\ub274\uc5bc] \uc544\uc6c3\uac8c\uc784 UI 1\ucc28"
+        ],
+        [
+          "MA-30338",
+          "[ME] M6 NPC \ud3ec\ud2b8\ub808\uc774\ud2b8"
+        ],
+        [
+          "MA-10226",
+          "[ME] \uccb4\uc778 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-28890",
+          "[ME] \uce90\ub9ad\ud130 \uc2a4\ud0ef 2\ucc28"
+        ],
+        [
+          "MA-26965",
+          "[ME] \uc5c5\uc801 \uc2dc\uc2a4\ud15c 3\ucc28 (\uad6c \uc800\ub110)"
+        ],
+        [
+          "MA-16568",
+          "[ME] \ub9c8\ubc95 \uc7ac\ub2a5 2\ucc28"
+        ],
+        [
+          "MA-14312",
+          "[ME] \ucee8\ud150\uce20 \ub0b4\ub7ec\ud2f0\ube0c \uac00\uc774\ub4dc \ud018\uc2a4\ud2b8 1\ucc28"
+        ],
+        [
+          "MA-29790",
+          "[ME] \ubbf8\ub2c8\ub9f5/\ud655\uc7a5\ub9f5/\uc6d4\ub4dc\ub9f5 3\ucc28"
+        ],
+        [
+          "MA-30864",
+          "[ME] \ub358\ubc14\ud2bc \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 (\uc2e4\ub0b4) 1\ucc28"
+        ],
+        [
+          "MA-25948",
+          "[ME] M6 \ub9c8\uc77c\uc2a4\ud1a4 \ud504\ub85c\uc138\uc2a4 \uc804\uc6a9 \uc5c5\ubb34"
+        ],
+        [
+          "MA-28946",
+          "[ME] M6 \ubc38\ub7f0\uc2f1 (\uc131\uc7a5/\uc804\ud22c/\uc544\uc774\ud15c/\ubaac\uc2a4\ud130 \ub4f1)"
+        ],
+        [
+          "MA-26290",
+          "[ME] \uce90\ub9ad\ud130 \ud504\ub85c\ud544 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-30989",
+          "[ME] [UI \ub9ac\ub274\uc5bc] \uc0dd\ud65c \uad00\ub828 UI 1\ucc28"
+        ],
+        [
+          "MA-31900",
+          "[ME] \ud0c0\uc774\ud2c0 \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-28942",
+          "[ME] \ud29c\ud1a0\ub9ac\uc5bc \uc2dc\uc2a4\ud15c 3\ucc28"
+        ]
+      ],
+      "ME_M7_2609": [
+        [
+          "MA-31214",
+          "[ME] \ub9ac\uc804 \uc2dc\uc2a4\ud15c 4\ucc28(\uad6c \ub9ac\uc804 \ubca0\ub9ac\uc5d0\uc774\uc158 4\ucc28)"
+        ],
+        [
+          "MA-30237",
+          "[ME] M7 \ub808\ubca8 \uba38\ud2f0\ub9ac\uc5bc \ub9c8\uc774\uadf8\ub808\uc774\uc158"
+        ],
+        [
+          "MA-11435",
+          "[ME] \uc2a4\ud06c\ub9b0\uc0f7 \ubaa8\ub4dc "
+        ],
+        [
+          "MA-16592",
+          "[ME] \uc544\ub974\uce74\ub098 \uc7ac\ub2a5 (\uc2a4\ud0ac) 4\ucc28"
+        ],
+        [
+          "MA-30236",
+          "[ME] M7 \ub808\ubca8 \ud3f4\ub9ac\uc2f1"
+        ],
+        [
+          "MA-24739",
+          "[ME] \uc2ac\ub9ac\uc544\ube0c \ubbf8\uc2dc \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-15206",
+          "[ME] \uc288\ud130 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-24366",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \uce74\ube0c \ud56d\uad6c : \uc120\uc220\uc9d1"
+        ],
+        [
+          "MA-28888",
+          "[ME] \ub300\ubbf8\uc9c0 \uacc4\uc0b0 3\ucc28"
+        ],
+        [
+          "MA-25701",
+          "[ME] \ub77c\uc774\ube0c \uc0dd\ud65c \uac1c\ud3b8 \ub300\uc751"
+        ],
+        [
+          "MA-8569",
+          "[ME] \ubcc0\uc2e0(\ud314\ub77c\ub518/\ub2e4\ud06c\ub098\uc774\ud2b8)/\uc57c\uc218\ud654 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-24605",
+          "[ME] [\uc678\uc8fc] \ucf00\uc548 \ud56d\uad6c NPC \uc81c\uc791"
+        ],
+        [
+          "MA-33149",
+          "[ME] \ucc44\ud305 \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-26680",
+          "[ME] \ud3ab \uc2dc\uc2a4\ud15c 4\ucc28"
+        ],
+        [
+          "MA-14268",
+          "[ME] \ud569\uc8fc \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24064",
+          "[ME] SFX \ud6a8\uacfc\uc74c \ub9ac\ub274\uc5bc"
+        ],
+        [
+          "MA-24746",
+          "[ME] \ube14\ub77c\uace0 \ud3c9\uc6d0 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24742",
+          "[ME] \ucf54\ub9ac\ube0c \uacc4\uace1 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24279",
+          "[ME] [\ub0b4\ubd80] \uc6b8\ub77c \ub358\uc804 (\uc54c\uc0c1\ud558 & \ube5b\uad6c)"
+        ],
+        [
+          "MA-17743",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ud398\uce74 \ub358\uc804"
+        ],
+        [
+          "MA-17731",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ubc14\uc62c \ub358\uc804"
+        ],
+        [
+          "MA-10257",
+          "[ME] \uc2a4\ud0c0\ub354\uc2a4\ud2b8 \uc2a4\ud0ac"
+        ],
+        [
+          "MA-14265",
+          "[ME] \uc740\ud589 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24744",
+          "[ME] \ubca8\ubc14\uc2a4\ud2b8 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 1\ucc28 (\ucd08\ubc8c)"
+        ],
+        [
+          "MA-26677",
+          "[ME] NPC \uc778\ubb3c\ub3c4\uac10 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24606",
+          "[ME] [\ub0b4\ubd80] \ud14c\ud750 \ub450\uc778 \uc785\uad6c NPC \uc81c\uc791"
+        ],
+        [
+          "MA-24907",
+          "[ME] (\uc6b8\ub77c \ub358\uc804) \ubc14\uc62c \ub358\uc804 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24059",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G0 2\ucc28"
+        ],
+        [
+          "MA-24743",
+          "[ME] \ud0c0\ub77c \uc2e4\ub0b4 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24599",
+          "[ME] \ubc18\ud638\ub974 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-15215",
+          "[ME] \uc11c\uc801 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24367",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \uc774\uba58 \ub9c8\ud558 \uc2e4\ub0b4"
+        ],
+        [
+          "MA-24741",
+          "[ME] \ud0c8\ud2f4 (\ub9ac\ub274\uc5bc) \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-27924",
+          "[ME] M7 \uc544\uc774\ud15c StringID \ubc0f ExtraDataXML \ud3ec\ud305"
+        ],
+        [
+          "MA-24567",
+          "[ME] \uad50\uc5ed \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-24563",
+          "[ME] \ub0ad\ub9cc\uc12c 3\ucc28"
+        ],
+        [
+          "MA-10231",
+          "[ME] \ub79c\uc2a4 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-24748",
+          "[ME] \uc2ac\ub9ac\uc544\ube0c \ud03c\ub9b0 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24598",
+          "[ME] \ub358\ubc14\ud2bc NPC \uc81c\uc791"
+        ],
+        [
+          "MA-29152",
+          "[ME] \uc6b8\ub77c \ub358\uc804 \uc2dc\uc2a4\ud15c \uad6c\ud604 4\ucc28"
+        ],
+        [
+          "MA-28024",
+          "[ME] \ud37c\uc81c\uc158 \uc2dc\uc2a4\ud15c 2\ucc28 (\uad6c RP)"
+        ],
+        [
+          "MA-23900",
+          "[ME] \uc635\uc158 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24750",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G2 \uc804\ud22c\ucee8\ud150\uce20 - \ud06c\ub85c\uc6b0 \ud06c\ub8e8\uc544\ud750"
+        ],
+        [
+          "MA-10293",
+          "[ME] \ud06c\ub86c \ubc14\uc2a4 \ub358\uc804 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-30856",
+          "[ME] \uc131\uc7a5 \uac00\uc774\ub4dc \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-13678",
+          "[ME] \uac70\ub798 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-27757",
+          "[ME] \uc804\ud22c \uc5f0\uae08\uc220 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-24747",
+          "[ME] \uc13c \ub9c8\uc774 \ud3c9\uc6d0 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24275",
+          "[ME] \uc778\ud615 \uac00\ubc29 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-31098",
+          "[ME] \uce90\ub9ad\ud130 \uc6b0\ud074\ub9ad \uba54\ub274 2\ucc28"
+        ],
+        [
+          "MA-26682",
+          "[ME] \uc774\ubca4\ud2b8 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-17592",
+          "[ME] [\ub0b4\ubd80] \uc774\uba58 \ub9c8\ud558 (\ub9ac\ub274\uc5bc)"
+        ],
+        [
+          "MA-29033",
+          "[ME] \uc778\uc2a4\ud134\uc2a4 \ub358\uc804 \uc2dc\uc2a4\ud15c 4\ucc28"
+        ],
+        [
+          "MA-35169",
+          "[ME] IRA \uc544\uc774\ud15c \ub9ac\uc18c\uc2a4 \uc5b4\uc14b 2\ucc28"
+        ],
+        [
+          "MA-10244",
+          "[ME] \ub4dc\ub808\uc2a4\ub8f8/\uc5fc\uc0c9\ub8f8 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24392",
+          "[ME] M7 \ub9c8\uc77c\uc2a4\ud1a4 \ud504\ub85c\uc138\uc2a4 \uc804\uc6a9 \uc5c5\ubb34"
+        ],
+        [
+          "MA-17598",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \uce74\ube0c \ud56d\uad6c (\ub9ac\ub274\uc5bc)"
+        ],
+        [
+          "MA-33464",
+          "[ME] \uacf5\uc6a9 \ub808\ub4dc\ub2f7 \uc2dc\uc2a4\ud15c 1\ucc28"
+        ],
+        [
+          "MA-24731",
+          "[ME] \uc774\uba58 \ub9c8\ud558 (\ub9ac\ub274\uc5bc) \uc2e4\uc678 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 1\ucc28"
+        ],
+        [
+          "MA-24906",
+          "[ME] (\uc6b8\ub77c \ub358\uc804) \uc54c\ubca0\uc774 \ub358\uc804 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-10233",
+          "[ME] \ub9c8\uae30\uadf8\ub798\ud53c \uc7ac\ub2a5"
+        ],
+        [
+          "MA-10232",
+          "[ME] \uc74c\uc720\uc2dc\uc778 \uc7ac\ub2a5 2\ucc28"
+        ],
+        [
+          "MA-15211",
+          "[ME] \ud56d\ud574 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24049",
+          "[ME] \ubaa8\ud5d8\uac00 \uc7ac\ub2a5 3\ucc28"
+        ],
+        [
+          "MA-15208",
+          "[ME] \uc544\uc774\ud15c - \uc5d0\ub974\uadf8"
+        ],
+        [
+          "MA-24610",
+          "[ME] [\ub0b4\ubd80] \uce74\ube0c \ud56d\uad6c NPC \uc81c\uc791"
+        ],
+        [
+          "MA-35134",
+          "[ME] \ud504\ub78d \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-10288",
+          "[ME] \uba54\uc2e0\uc800 & \uce5c\uad6c \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-14260",
+          "[ME] \uc2dc\uacc4/\uc54c\ub9bc \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-27759",
+          "[ME] \uc74c\uc545 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-26963",
+          "[ME] \ucee8\ud150\uce20 \ub0b4\ub7ec\ud2f0\ube0c \uac00\uc774\ub4dc \ud018\uc2a4\ud2b8 2\ucc28"
+        ],
+        [
+          "MA-14302",
+          "[ME] \ud559\ud68c(\uc2a4\ud0c0\ub354\uc2a4\ud2b8) \uc2dc\uc2a4\ud15c "
+        ],
+        [
+          "MA-35197",
+          "[ME] \uc758\uc790\ud615(\uc124\uce58\ud615) \ud504\ub78d 4\ucc28"
+        ],
+        [
+          "MA-31097",
+          "[ME] \ud018\uc2a4\ud2b8 \uc2dc\uc2a4\ud15c 5\ucc28 (\ud018\uc2a4\ud2b8 \uc2a4\ud0b5)"
+        ],
+        [
+          "MA-26966",
+          "[ME] \uc5c5\uc801 \uc2dc\uc2a4\ud15c 4\ucc28 (\uad6c \uc800\ub110)"
+        ],
+        [
+          "MA-14343",
+          "[ME] \ud654\ud3d0 \ubcf4\uad00\ud568 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-28891",
+          "[ME] \uce90\ub9ad\ud130 \uc2a4\ud0ef 3\ucc28"
+        ],
+        [
+          "MA-33396",
+          "[ME] \uc885\uc871 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-10238",
+          "[ME] \uc810\uc131\uc220 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-24749",
+          "[ME] \ucf00\uc624 \uc12c \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-28955",
+          "[ME] \uc544\uc774\ud15c \uc138\ud2b8\ud6a8\uacfc"
+        ],
+        [
+          "MA-33148",
+          "[ME] \ubfd4\ud53c\ub9ac \uc2dc\uc2a4\ud15c - \uc11c\ubc84 \uc5b4\ub098\uc6b4\uc2a4"
+        ],
+        [
+          "MA-24056",
+          "[ME] \uc778\ud615 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-24734",
+          "[ME] \ub77c\ud750 \uc655\uc131 (\ub9ac\ub274\uc5bc) \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-28884",
+          "[ME] \uae30\ubcf8 \uc804\ud22c \uc2dc\uc2a4\ud15c 6\ucc28"
+        ],
+        [
+          "MA-14271",
+          "[ME] \uacbd\ub9e4\uc7a5 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-14278",
+          "[ME] \uc778\uc220 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-30339",
+          "[ME] M7 NPC \ud3ec\ud2b8\ub808\uc774\ud2b8"
+        ],
+        [
+          "MA-17594",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ud0c8\ud2f4 (\ub9ac\ub274\uc5bc)"
+        ],
+        [
+          "MA-35127",
+          "[ME] \uc778\ud130\ub809\uc158 \uc2dc\uc2a4\ud15c 3\ucc28"
+        ],
+        [
+          "MA-16591",
+          "[ME] \uc544\ub974\uce74\ub098 \uc7ac\ub2a5 (\uc2a4\ud0ac) 3\ucc28"
+        ],
+        [
+          "MA-27758",
+          "[ME] \uc5f0\uc131 \uc5f0\uae08\uc220 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-24908",
+          "[ME] (\uc6b8\ub77c \ub358\uc804) \ubc14\ub9ac \ub358\uc804 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24745",
+          "[ME] \ucf00\uc624 \uc12c \uc9c0\ud558 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-17600",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ucf00\uc548 \ud56d\uad6c"
+        ]
+      ],
+      "ME_M8_2612": [
+        [
+          "MA-24773",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc C1 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-30238",
+          "[ME] M8 \ub808\ubca8 \ud3f4\ub9ac\uc2f1"
+        ],
+        [
+          "MA-33151",
+          "[ME] \uadf8\ub9bc \ub300\ud654 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24760",
+          "[ME] \uc2e4\ub9ac\uc5d4 \uc0dd\ud0dc\uc9c0\uad6c \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-17665",
+          "[ME] [\ub0b4\ubd80] \ubca8\ubc14\uc2a4\ud2b8"
+        ],
+        [
+          "MA-31099",
+          "[ME] \uce90\ub9ad\ud130 \uc6b0\ud074\ub9ad \uba54\ub274 3\ucc28"
+        ],
+        [
+          "MA-20774",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G1 \ucef7\uc2e0"
+        ],
+        [
+          "MA-10256",
+          "[ME] \ud14c\ud750 \ub450\uc778 \ubbf8\uc158 "
+        ],
+        [
+          "MA-30977",
+          "[ME] \uc544\uc6c3\uac8c\uc784 & \ub85c\ube44 \ub9ac\ub274\uc5bc 3\ucc28"
+        ],
+        [
+          "MA-24065",
+          "[ME] \uc77c\uc77c \ud018\uc2a4\ud2b8 & \uc624\ub298\uc758 \ubbf8\uc158 (\uc2dc\uc2a4\ud15c)"
+        ],
+        [
+          "MA-24287",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ubcc4\uc758 \uc131\ucc44"
+        ],
+        [
+          "MA-14272",
+          "[ME] \uacb0\ud63c/\ud328\ubc00\ub9ac \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-14905",
+          "[ME] OTP \uc778\uc99d"
+        ],
+        [
+          "MA-24754",
+          "[ME] \ucf00\uc548 \ud56d\uad6c \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24740",
+          "[ME] \uc774\uba58 \ub9c8\ud558 \uc2e4\ub0b4 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-28892",
+          "[ME] \uce90\ub9ad\ud130 \uc2a4\ud0ef 4\ucc28"
+        ],
+        [
+          "MA-14902",
+          "[ME] \uc11c\ubc84 \uc6b4\uc601 \ud234"
+        ],
+        [
+          "MA-26964",
+          "[ME] \ucee8\ud150\uce20 \ub0b4\ub7ec\ud2f0\ube0c \uac00\uc774\ub4dc \ud018\uc2a4\ud2b8 3\ucc28"
+        ],
+        [
+          "MA-33394",
+          "[ME] \ubca8\ubc14\uc2a4\ud2b8 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 2\ucc28 (\ucd5c\uc885 \uc644\ub8cc)"
+        ],
+        [
+          "MA-29034",
+          "[ME] \uc778\uc2a4\ud134\uc2a4 \ub358\uc804 \uc2dc\uc2a4\ud15c 5\ucc28"
+        ],
+        [
+          "MA-24761",
+          "[ME] \uc810\uc131\uc220\uc0ac \ucea0\ud504 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-35198",
+          "[ME] \uc758\uc790\ud615(\uc124\uce58\ud615) \ud504\ub78d 5\ucc28"
+        ],
+        [
+          "MA-24047",
+          "[ME] \uc544\ub974\uce74\ub098 \uc7ac\ub2a5 (\uc2a4\ud0ac) 6\ucc28"
+        ],
+        [
+          "MA-24762",
+          "[ME] \ud790\uc6ec \uad11\uc0b0 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24384",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G1 \uc778\uc2a4\ud134\uc2a4 \ub358\uc804"
+        ],
+        [
+          "MA-30486",
+          "[ME] \ub3d9\ubb3c \uce5c\uad6c\ub4e4 \ubc0f \ud658\uacbd \uafb8\ubc08 \uc694\uc18c \uc81c\uc791"
+        ],
+        [
+          "MA-27051",
+          "[ME] \ubaa8\ub974\ubc14 \uc544\uc77c \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-17582",
+          "[ME] [\ub0b4\ubd80/\uc678\uc8fc] \uc6d4\ub4dc \uacf5\ud1b5"
+        ],
+        [
+          "MA-24752",
+          "[ME] \uce74\ube0c \ud56d\uad6c : \uc120\uc220\uc9d1 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-17216",
+          "[ME] \uc694\uc77c \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-14900",
+          "[ME] \uc778\uc99d \uc11c\ubc84"
+        ],
+        [
+          "MA-26681",
+          "[ME] \ud3ab \uc2dc\uc2a4\ud15c 5\ucc28"
+        ],
+        [
+          "MA-14276",
+          "[ME] \uc530\ube0c\ub808\uc774\ud06c \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-14339",
+          "[ME] \ud30c\ud2b8\ub108 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-28889",
+          "[ME] \ub300\ubbf8\uc9c0 \uacc4\uc0b0 4\ucc28"
+        ],
+        [
+          "MA-10264",
+          "[ME] \ubb34\uae30 \uc678\ud615 \ubcc0\uacbd \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-25923",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-20758",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G1 \uc5ec\uc2e0\uac15\ub9bc"
+        ],
+        [
+          "MA-14334",
+          "[ME] \uce90\uc2dc\uc0f5 / \ub9c8\uc77c\ub9ac\uc9c0 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-33475",
+          "[ME] \ud0c8\ud2f4 NPC \uc81c\uc791 2\ucc28 (\uc544\ub974\ubc14\uc774\ud2b8 2\uc885 \ucd94\uac00)"
+        ],
+        [
+          "MA-17590",
+          "[ME] [\ub0b4\ubd80] \uc800 \uc138\uc0c1 \ubc18\ud638\ub974 (\ub9ac\ub274\uc5bc)"
+        ],
+        [
+          "MA-24759",
+          "[ME] \ubcc4\uc758 \uc131\ucc44 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24286",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \uc810\uc131\uc220\uc0ac \ucea0\ud504"
+        ],
+        [
+          "MA-14323",
+          "[ME] \ube0c\ub9ac \ub808\ud750 \ub358\uc804 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24755",
+          "[ME] \ubc18\ud638\ub974 (\ub9ac\ub274\uc5bc) \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-14301",
+          "[ME] \ud504\ub9ac\ubbf8\uc5c4 \uba64\ubc84\uc2ed \uc11c\ube44\uc2a4 "
+        ],
+        [
+          "MA-28885",
+          "[ME] \uae30\ubcf8 \uc804\ud22c \uc2dc\uc2a4\ud15c 7\ucc28"
+        ],
+        [
+          "MA-23635",
+          "[ME] NPC \uacf5\uc6a9 \uc81c\uc791"
+        ],
+        [
+          "MA-27359",
+          "[ME] \ub358\ubc14\ud2bc \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 2\ucc28"
+        ],
+        [
+          "MA-31218",
+          "[ME] \ub9ac\uc804 \uc2dc\uc2a4\ud15c 5\ucc28(\uad6c \ub9ac\uc804 \ubca0\ub9ac\uc5d0\uc774\uc158 5\ucc28)"
+        ],
+        [
+          "MA-10261",
+          "[ME] \uc544\ub974\ubc14\uc774\ud2b8 \uc2dc\uc2a4\ud15c "
+        ],
+        [
+          "MA-10292",
+          "[ME] \uae00\ub80c \ubca0\ub974\ub098 \ub358\uc804 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-25750",
+          "[ME] \ud544\ub4dc \ubaac\uc2a4\ud130 \ubc0f \ub3d9\ubb3c \uc81c\uc791"
+        ],
+        [
+          "MA-24882",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc C2 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-14903",
+          "[ME] \ub125\uc2a8 \uc778\uc99d \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24751",
+          "[ME] \ud14c\ud750 \ub450\uc778 \uc785\uad6c \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24067",
+          "[ME] \uc77c\uc77c \ud018\uc2a4\ud2b8 & \uc624\ub298\uc758 \ubbf8\uc158 (\ud018\uc2a4\ud2b8)"
+        ],
+        [
+          "MA-35144",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G0 3\ucc28"
+        ],
+        [
+          "MA-24757",
+          "[ME] \uc800 \uc138\uc0c1 \ubc18\ud638\ub974 (\ub9ac\ub274\uc5bc) \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-17707",
+          "[ME] [\ub0b4\ubd80] \ud398\uc2a4\ud53c\uc544\ub2e4"
+        ],
+        [
+          "MA-33476",
+          "[ME] \ubca8\ubc14\uc2a4\ud2b8 NPC \uc81c\uc791 2\ucc28 (\uc544\ub974\ubc14\uc774\ud2b8 3\uc885 \ucd94\uac00)"
+        ],
+        [
+          "MA-24393",
+          "[ME] M8 \ub9c8\uc77c\uc2a4\ud1a4 \ud504\ub85c\uc138\uc2a4 \uc804\uc6a9 \uc5c5\ubb34"
+        ],
+        [
+          "MA-10249",
+          "[ME] \uc81c\uc2a4\uccd0/\uc561\uc158 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-17583",
+          "[ME] [\ub0b4\ubd80/\uc678\uc8fc] \uc6d4\ub4dc \uacf5\ud1b5 (\ud3f4\ub9ac\uc9c0 \uc5d0\uc14b)"
+        ],
+        [
+          "MA-17588",
+          "[ME] [\ub0b4\ubd80] \ubc18\ud638\ub974 (\ub9ac\ub274\uc5bc)"
+        ],
+        [
+          "MA-28567",
+          "[ME] G1 \ubcf4\uc2a4\uc804 \ub808\uc774\ub4dc"
+        ],
+        [
+          "MA-17606",
+          "[ME] [\ub0b4\ubd80] \uc800 \uc138\uc0c1 \uac00\uc774\ub808\ud750 \uc5b8\ub355"
+        ],
+        [
+          "MA-10302",
+          "[ME] \uc218\uc9d1\uc77c\uae30 "
+        ],
+        [
+          "MA-30239",
+          "[ME] M8 \ub808\ubca8 \uba38\ud2f0\ub9ac\uc5bc \ub9c8\uc774\uadf8\ub808\uc774\uc158"
+        ],
+        [
+          "MA-24568",
+          "[ME] \uad50\uc5ed \uc2dc\uc2a4\ud15c 4\ucc28"
+        ],
+        [
+          "MA-16593",
+          "[ME] \uc544\ub974\uce74\ub098 \uc7ac\ub2a5 (\uc2a4\ud0ac) 5\ucc28"
+        ],
+        [
+          "MA-14314",
+          "[ME] \uad50\uc5ed \uc11c\ube0c \ud018\uc2a4\ud2b8"
+        ],
+        [
+          "MA-10227",
+          "[ME] \uaca9\ud22c \uc7ac\ub2a5"
+        ],
+        [
+          "MA-26962",
+          "[ME] \uc774\ud130\ub2c8\ud2f0 \uc624\ud504\ub2dd \uc2dc\ud000\uc2a4"
+        ],
+        [
+          "MA-14299",
+          "[ME] \uc815\ub839 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-33392",
+          "[ME] \uc774\uba58 \ub9c8\ud558 (\ub9ac\ub274\uc5bc) \uc2e4\uc678 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 2\ucc28"
+        ],
+        [
+          "MA-24283",
+          "[ME] [\ub0b4\ubd80] \ube0c\ub9ac \ub808\ud750 \ub358\uc804"
+        ],
+        [
+          "MA-26967",
+          "[ME] \uc5c5\uc801 \uc2dc\uc2a4\ud15c 5\ucc28 (\uad6c \uc800\ub110)"
+        ],
+        [
+          "MA-25102",
+          "[ME] (\uc6b8\ub77c \ub358\uc804) \ud398\uce74 \ub358\uc804 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24775",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc C3 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-30340",
+          "[ME] M8 NPC \ud3ec\ud2b8\ub808\uc774\ud2b8"
+        ],
+        [
+          "MA-10237",
+          "[ME] \ud3ab \ud578\ub4e4\ub9c1 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-14282",
+          "[ME] \ubaa8\ub2e5\ubd88 \uc815\ub839 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-27926",
+          "[ME] M8 \uc544\uc774\ud15c StringID \ubc0f ExtraDataXML \ud3ec\ud305"
+        ],
+        [
+          "MA-24181",
+          "[ME] \ud14d\uc2a4\ud2b8\ud0a4/\ub85c\uceec\ub77c\uc774\uc9d5 2\ucc28"
+        ],
+        [
+          "MA-17636",
+          "[ME] [\ub0b4\ubd80] \ub0ad\ub9cc\uc12c"
+        ],
+        [
+          "MA-26683",
+          "[ME] \uc815\ub839 \ud615\uc0c1 \ubcc0\ud658 & \uc2a4\ud0ac \uc774\ud399\ud2b8 \ubcc0\uacbd \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24052",
+          "[ME] \ubcf4\uc0c1 \uc81c\ud55c \uc2dc\uc2a4\ud15c (\ub9ac\ud30c\uc778\ub4dc)"
+        ],
+        [
+          "MA-14904",
+          "[ME] \ube4c\ub9c1 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24756",
+          "[ME] \uc800 \uc138\uc0c1 \uac00\uc774\ub808\ud750 \uc5b8\ub355 \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-24068",
+          "[ME] \uba38\ud2f0\ub9ac\uc5bc \ucd5c\uc801\ud654"
+        ],
+        [
+          "MA-24753",
+          "[ME] \uce74\ube0c \ud56d\uad6c (\ub9ac\ub274\uc5bc) \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305"
+        ],
+        [
+          "MA-35194",
+          "[ME] \ubbf8\ub2c8\ub9f5/\ud655\uc7a5\ub9f5/\uc6d4\ub4dc\ub9f5 4\ucc28"
+        ],
+        [
+          "MA-24066",
+          "[ME] \uc5f0\uae08 \uc7ac\ub2a5"
+        ],
+        [
+          "MA-33840",
+          "[ME] \uc544\ub974\uce74\ub098 NPC \uc81c\uc791"
+        ],
+        [
+          "MA-15210",
+          "[ME] \ub09a\uc2dc \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24284",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \ud790\uc6ec \uad11\uc0b0"
+        ],
+        [
+          "MA-35135",
+          "[ME] \ud504\ub78d \uc2dc\uc2a4\ud15c 4\ucc28"
+        ],
+        [
+          "MA-14913",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc \ubaac\uc2a4\ud130 \ub9ac\ub274\uc5bc "
+        ],
+        [
+          "MA-14320",
+          "[ME] NPC \ud018\uc2a4\ud2b8 1\ucc28"
+        ],
+        [
+          "MA-24285",
+          "[ME] [\uc678\uc8fc/\ub0b4\ubd80] \uc2e4\ub9ac\uc5d4 \uc0dd\ud0dc\uc9c0\uad6c"
+        ],
+        [
+          "MA-35128",
+          "[ME] \uc778\ud130\ub809\uc158 \uc2dc\uc2a4\ud15c 4\ucc28"
+        ],
+        [
+          "MA-10287",
+          "[ME] \uae38\ub4dc \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-24564",
+          "[ME] \ub0ad\ub9cc\uc12c 4\ucc28"
+        ]
+      ],
+      "ME_PP1_2703": [
+        [
+          "MA-35163",
+          "[ME] \uc5c5\uc801 \uc2dc\uc2a4\ud15c 6\ucc28 (\uad6c \uc800\ub110)"
+        ],
+        [
+          "MA-35151",
+          "[ME] NPC \ud018\uc2a4\ud2b8 2\ucc28"
+        ],
+        [
+          "MA-35174",
+          "[ME] \ub9ac\uc804 \uc2dc\uc2a4\ud15c 6\ucc28(\uad6c \ub9ac\uc804 \ubca0\ub9ac\uc5d0\uc774\uc158 6\ucc28)"
+        ],
+        [
+          "MA-35186",
+          "[ME] \ud3ab \uc2dc\uc2a4\ud15c 6\ucc28"
+        ],
+        [
+          "MA-10291",
+          "[ME] \ucf64\ubcf4 \uce74\ub4dc \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-30196",
+          "[ME] \uc544\uc774\ud15c \uc2a4\ud14c\uc774\ud2b8\uc5d0 \ub530\ub978 \uba54\uc2dc \ubcc0\ud654 \uc2dc\uc2a4\ud15c"
+        ],
+        [
+          "MA-35145",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G0 4\ucc28"
+        ],
+        [
+          "MA-34473",
+          "[ME] \uad50\uc5ed \uc2dc\uc2a4\ud15c 5\ucc28"
+        ],
+        [
+          "MA-29035",
+          "[ME] \uc778\uc2a4\ud134\uc2a4 \ub358\uc804 \uc2dc\uc2a4\ud15c 6\ucc28"
+        ],
+        [
+          "MA-14269",
+          "[ME] \ud504\ub9ac\uc2a4\ud0c0\uc77c \uc7bc"
+        ],
+        [
+          "MA-35160",
+          "[ME] \uce90\ub9ad\ud130 \uc6b0\ud074\ub9ad \uba54\ub274 4\ucc28"
+        ],
+        [
+          "MA-35140",
+          "[ME] \ucee8\ud150\uce20 \ub0b4\ub7ec\ud2f0\ube0c \uac00\uc774\ub4dc \ud018\uc2a4\ud2b8 4\ucc28"
+        ],
+        [
+          "MA-26684",
+          "[ME] \ub300\ubbf8\uc9c0 \ud3f0\ud2b8 \ubcc0\uacbd \uc2dc\uc2a4\ud15c"
+        ]
+      ],
+      "ME_PP2_2706": [
+        [
+          "MA-35175",
+          "[ME] \ub9ac\uc804 \uc2dc\uc2a4\ud15c 7\ucc28(\uad6c \ub9ac\uc804 \ubca0\ub9ac\uc5d0\uc774\uc158 7\ucc28)"
+        ],
+        [
+          "MA-35141",
+          "[ME] \ucee8\ud150\uce20 \ub0b4\ub7ec\ud2f0\ube0c \uac00\uc774\ub4dc \ud018\uc2a4\ud2b8 5\ucc28"
+        ],
+        [
+          "MA-29036",
+          "[ME] \uc778\uc2a4\ud134\uc2a4 \ub358\uc804 \uc2dc\uc2a4\ud15c 7\ucc28"
+        ],
+        [
+          "MA-26968",
+          "[ME] \ubb38\ud558\uc774\ub4dc(\ud29c\ud1a0\ub9ac\uc5bc \uc9c0\uc5ed) \ud50c\ub808\uc774\uc5b4\ube14 \uc138\ud305 2\ucc28"
+        ],
+        [
+          "MA-24273",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G2 \ud314\ub77c\ub518"
+        ],
+        [
+          "MA-35170",
+          "[ME] IRA \uc544\uc774\ud15c \ub9ac\uc18c\uc2a4 \uc5b4\uc14b 3\ucc28"
+        ],
+        [
+          "MA-35164",
+          "[ME] \uc5c5\uc801 \uc2dc\uc2a4\ud15c 7\ucc28 (\uad6c \uc800\ub110)"
+        ],
+        [
+          "MA-35146",
+          "[ME] \uba54\uc778\uc2a4\ud2b8\ub9bc G0 5\ucc28"
+        ],
+        [
+          "MA-35152",
+          "[ME] NPC \ud018\uc2a4\ud2b8 3\ucc28"
+        ],
+        [
+          "MA-35187",
+          "[ME] \ud3ab \uc2dc\uc2a4\ud15c 7\ucc28"
+        ]
+      ]
+    },
+    "summary": {
+      "added_count": 0,
+      "changes": {
+        "added": {},
+        "removed": {}
+      },
+      "removed_count": 0
+    }
   }
 }
