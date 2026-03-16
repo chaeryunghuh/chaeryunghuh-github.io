@@ -1,19 +1,8 @@
-<html><body><h2 style='color:red;'>데이터를 불러올 수 없습니다.</h2><p>Jira 데이터 로딩 실패: JiraError HTTP 404 url: https://jiralive.nexon.com/rest/api/2/search?jql=fixversion+%3D+%22ME_M6_2606%22+AND+issuetype+%3D+Epic+AND+%22ME_%EB%8C%80%EB%B6%84%EB%A5%98%22+is+not+EMPTY&startAt=0&validateQuery=True&fields=%2Aall&maxResults=False
-	text: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>404 404</title>
-</head><body>
-<h1>404</h1>
-<p>The requested URL was not found on this server.</p>
-</body></html>
 
-	
-	response headers = {'Date': 'Mon, 16 Mar 2026 12:51:28 GMT', 'Content-Type': 'text/html; charset=iso-8859-1', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Content-Encoding': 'gzip', 'CF-RAY': '9dd3e3b47d5cea31-ICN'}
-	response text = <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>404 404</title>
-</head><body>
-<h1>404</h1>
-<p>The requested URL was not found on this server.</p>
-</body></html>
-</p></body></html>
+        <!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>데이터 오류</title></head>
+        <body><div style="padding:20px; text-align:center;">
+        <h2 style='color:red;'>데이터를 불러올 수 없습니다.</h2>
+        <p>Jira에서 해당 조건('fixversion = ME_M6_2606', 'issuetype = Epic', 'ME_대분류'가 비어있지 않음)의 이슈는 찾았으나,<br>
+        'ME_대분류' 값을 가진 항목이 없거나 처리할 수 없어 대시보드를 생성하지 못했습니다.</p>
+        </div></body></html>
+        
