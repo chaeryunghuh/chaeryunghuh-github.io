@@ -1,0 +1,110 @@
+
+    <!DOCTYPE html><html lang="ko"><head>
+    <meta charset="UTF-8"><title>일별 신규 업무 추이</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+        h2 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .chart-container { position: relative; height:40vh; width:80vw; margin: 20px auto; }
+        .issue-list { margin-top: 30px; padding-top: 20px; border-top: 1px solid #ccc; }
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; background-color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: 600; }
+        tr:nth-child(even) { background-color: #f7f7f7; }
+        a { color: #0052cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .no-issues { text-align: center; color: #888; }
+    </style>
+    </head><body>
+    <h2>FixVersion (ME_M6_2606) 일별 신규 업무 추이 (최근 7일)</h2>
+    <div class="chart-container"><canvas id="daily-chart"></canvas></div>
+    <div id="details-container">
+        <div class="issue-list" id="list-2026-03-10" style="display:none;">
+            <h4>2026-03-10 신규 업무 목록</h4>
+            <table>
+                <thead><tr><th>이슈 키</th><th>요약</th><th>담당자</th><th>상태</th></tr></thead>
+                <tbody><tr><td colspan="4" class="no-issues">해당 날짜에 추가된 업무가 없습니다.</td></tr></tbody>
+            </table>
+        </div>
+        
+        <div class="issue-list" id="list-2026-03-11" style="display:none;">
+            <h4>2026-03-11 신규 업무 목록</h4>
+            <table>
+                <thead><tr><th>이슈 키</th><th>요약</th><th>담당자</th><th>상태</th></tr></thead>
+                <tbody><tr><td colspan="4" class="no-issues">해당 날짜에 추가된 업무가 없습니다.</td></tr></tbody>
+            </table>
+        </div>
+        
+        <div class="issue-list" id="list-2026-03-12" style="display:none;">
+            <h4>2026-03-12 신규 업무 목록</h4>
+            <table>
+                <thead><tr><th>이슈 키</th><th>요약</th><th>담당자</th><th>상태</th></tr></thead>
+                <tbody><tr><td colspan="4" class="no-issues">해당 날짜에 추가된 업무가 없습니다.</td></tr></tbody>
+            </table>
+        </div>
+        
+        <div class="issue-list" id="list-2026-03-13" style="display:none;">
+            <h4>2026-03-13 신규 업무 목록</h4>
+            <table>
+                <thead><tr><th>이슈 키</th><th>요약</th><th>담당자</th><th>상태</th></tr></thead>
+                <tbody><tr><td colspan="4" class="no-issues">해당 날짜에 추가된 업무가 없습니다.</td></tr></tbody>
+            </table>
+        </div>
+        
+        <div class="issue-list" id="list-2026-03-14" style="display:none;">
+            <h4>2026-03-14 신규 업무 목록</h4>
+            <table>
+                <thead><tr><th>이슈 키</th><th>요약</th><th>담당자</th><th>상태</th></tr></thead>
+                <tbody><tr><td colspan="4" class="no-issues">해당 날짜에 추가된 업무가 없습니다.</td></tr></tbody>
+            </table>
+        </div>
+        
+        <div class="issue-list" id="list-2026-03-15" style="display:none;">
+            <h4>2026-03-15 신규 업무 목록</h4>
+            <table>
+                <thead><tr><th>이슈 키</th><th>요약</th><th>담당자</th><th>상태</th></tr></thead>
+                <tbody><tr><td colspan="4" class="no-issues">해당 날짜에 추가된 업무가 없습니다.</td></tr></tbody>
+            </table>
+        </div>
+        
+        <div class="issue-list" id="list-2026-03-16" style="display:none;">
+            <h4>2026-03-16 신규 업무 목록</h4>
+            <table>
+                <thead><tr><th>이슈 키</th><th>요약</th><th>담당자</th><th>상태</th></tr></thead>
+                <tbody><tr><td colspan="4" class="no-issues">해당 날짜에 추가된 업무가 없습니다.</td></tr></tbody>
+            </table>
+        </div>
+        </div>
+    <script>
+        const ctx = document.getElementById('daily-chart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-14", "2026-03-15", "2026-03-16"],
+                datasets: [{
+                    label: '신규 업무 수',
+                    data: [0, 0, 0, 0, 0, 0, 0],
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                onClick: (e, elements) => {
+                    if (elements.length > 0) {
+                        const index = elements[0].index;
+                        const date = chart.data.labels[index];
+                        document.querySelectorAll('.issue-list').forEach(el => el.style.display = 'none');
+                        const targetList = document.getElementById('list-' + date);
+                        if (targetList) { targetList.style.display = 'block'; }
+                    }
+                },
+                scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } },
+                maintainAspectRatio: false,
+                hover: { mode: 'index', intersect: false },
+                plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } }
+            }
+        });
+    </script>
+    </body></html>
+    
