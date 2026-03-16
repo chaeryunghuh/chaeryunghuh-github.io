@@ -1,0 +1,988 @@
+[
+  {
+    "date": "2026-03-16",
+    "count": 140,
+    "issues": [
+      {
+        "key": "MA-35202",
+        "summary": "[비전 기획][웃게임 & 로비 리뉴얼 2차] 최종 확인",
+        "assignee": "김상문 [pierce]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35202"
+      },
+      {
+        "key": "MA-35126",
+        "summary": "[비전 클라] Race 레이스 시스템 구현",
+        "assignee": "임건우 [lkw3104]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35126"
+      },
+      {
+        "key": "MA-35123",
+        "summary": "[비전 기획] 개발 리스트 작업",
+        "assignee": "고세영 [neomenia527]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35123"
+      },
+      {
+        "key": "MA-35122",
+        "summary": "[비전 기획] 생활 프리셋 시스템 기획 3차",
+        "assignee": "고세영 [neomenia527]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35122"
+      },
+      {
+        "key": "MA-35121",
+        "summary": "[비전 서버] 액션 이펙트 상태 동기화",
+        "assignee": "류현우 [hyeonwooryu]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35121"
+      },
+      {
+        "key": "MA-35120",
+        "summary": "[비전 클라] 컷신 시스템 기능 추가 작업",
+        "assignee": "한상진 [saladinhsj]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35120"
+      },
+      {
+        "key": "MA-35119",
+        "summary": "[비전 클라] 몰프 호출(NPC 추가 작업)",
+        "assignee": "문길섭 [dalparan]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35119"
+      },
+      {
+        "key": "MA-35118",
+        "summary": "[비전 클라] 눈동자 컨트롤",
+        "assignee": "문길섭 [dalparan]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35118"
+      },
+      {
+        "key": "MA-35117",
+        "summary": "[비전 서버] 스킬 Var 값이 변경 될 때 클라이언트에 싱크하도록 수정",
+        "assignee": "류현우 [hyeonwooryu]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35117"
+      },
+      {
+        "key": "MA-35116",
+        "summary": "[비전 클라] 탑승물과 탑승자의 애니메이션 동기화 시스템 개발",
+        "assignee": "장현재 [rocco]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35116"
+      },
+      {
+        "key": "MA-35111",
+        "summary": "[비전 리깅] [센마이] NPC 플레타 우비 - 라브",
+        "assignee": "전지혜 [jihye0413]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35111"
+      },
+      {
+        "key": "MA-35110",
+        "summary": "[비전 기획][울라 던전 인스턴스 던전화] 상세 기획 작성 ",
+        "assignee": "김현준5 [khj79]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35110"
+      },
+      {
+        "key": "MA-35109",
+        "summary": "[울라 던전 인스턴스 던전화] 최종 확인",
+        "assignee": "김현준5 [khj79]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35109"
+      },
+      {
+        "key": "MA-35108",
+        "summary": "[울라 던전 인스턴스 던전화] 기능 구현",
+        "assignee": "김현준5 [khj79]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35108"
+      },
+      {
+        "key": "MA-35107",
+        "summary": "[ME] 울라 던전 인스턴스 던전화",
+        "assignee": "김현준5 [khj79]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35107"
+      },
+      {
+        "key": "MA-35106",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 키가 작은 NPC의 경우 다이얼로그 시퀀스가 튀는 현상",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35106"
+      },
+      {
+        "key": "MA-35105",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 다이얼로그 시퀀스 진입 시, NPC가 회전하는 현상",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35105"
+      },
+      {
+        "key": "MA-35104",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 내 캐릭터가 나오는 현상 수정",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35104"
+      },
+      {
+        "key": "MA-35103",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 다이얼로그 시퀀스 전환 시, 1프레임이 튀는 현상 수정",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35103"
+      },
+      {
+        "key": "MA-35102",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 다이얼로그 시퀀스 테이블에서 지정한 animation의 루프 처리 플래그",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35102"
+      },
+      {
+        "key": "MA-35101",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - NPC별로 다이얼로그 테이블 분화",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35101"
+      },
+      {
+        "key": "MA-35100",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 대화 UI BP 구조 변경 관련 대응",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35100"
+      },
+      {
+        "key": "MA-35099",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 텍스트 매크로",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35099"
+      },
+      {
+        "key": "MA-35098",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - NPC 포트레이트 데이터 연결방식 변경",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35098"
+      },
+      {
+        "key": "MA-35097",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 인풋박스 처리",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35097"
+      },
+      {
+        "key": "MA-35096",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - sTxt 파리머터의 XML 태그 대응 2",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35096"
+      },
+      {
+        "key": "MA-35095",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - sTxt 파라미터의 XML 태그 대응 1",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35095"
+      },
+      {
+        "key": "MA-35094",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - NPC.lua에서 한국어 스트링 제거",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35094"
+      },
+      {
+        "key": "MA-35093",
+        "summary": "[비전 기획][NPC 시스템 4차 (대화 심화 기능)] 최종 확인 - 현재 진행 가능한 퀘스트 버튼 출력 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35093"
+      },
+      {
+        "key": "MA-35092",
+        "summary": "[비전 기획] [문하이드(튜토리얼 지역) 플레이어블 세팅 1차] 최종 확인 - 배치 작업",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35092"
+      },
+      {
+        "key": "MA-35091",
+        "summary": "[비전 기획] [문하이드(튜토리얼 지역) 플레이어블 세팅 1차] 최종 확인 - 지역 이동 기능",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35091"
+      },
+      {
+        "key": "MA-35090",
+        "summary": "[비전 기획][업적 시스템 3차 (구 저널)] 최종 확인 - 업적 시스템 확장",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35090"
+      },
+      {
+        "key": "MA-35089",
+        "summary": "[비전 기획][컨텐츠 내러티브 가이드 퀘스트 1차] 최종 확인 - 알파 테스트 대응",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35089"
+      },
+      {
+        "key": "MA-35088",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 키가 작은 NPC의 경우 다이얼로그 시퀀스가 튀는 현상",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35088"
+      },
+      {
+        "key": "MA-35087",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 다이얼로그 시퀀스 진입 시, NPC가 회전하는 현상",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35087"
+      },
+      {
+        "key": "MA-35086",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 다이얼로그 시퀀스 전환 시, 1프레임이 튀는 현상 수정",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35086"
+      },
+      {
+        "key": "MA-35085",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 다이얼로그 시퀀스 테이블에서 지정한 animation의 루프 처리 플래그",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35085"
+      },
+      {
+        "key": "MA-35084",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 디렉셔널 라이트가 현재 2개",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35084"
+      },
+      {
+        "key": "MA-35083",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - Loot at",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35083"
+      },
+      {
+        "key": "MA-35082",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 눈동자 컨트롤",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35082"
+      },
+      {
+        "key": "MA-35081",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 거리 기반 심도 색상 보정",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35081"
+      },
+      {
+        "key": "MA-35080",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 아무데서나 호출되는 컷신의 처리",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35080"
+      },
+      {
+        "key": "MA-35079",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 컷신 공간 분할",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35079"
+      },
+      {
+        "key": "MA-35078",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 시퀀서 페이드 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35078"
+      },
+      {
+        "key": "MA-35077",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 몰프 호출",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35077"
+      },
+      {
+        "key": "MA-35076",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 아웃라인 일괄 켜기",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35076"
+      },
+      {
+        "key": "MA-35075",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 캐릭터 연동 카메라",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35075"
+      },
+      {
+        "key": "MA-35074",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - Sequence Dynamic Pawn 바인딩 3",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35074"
+      },
+      {
+        "key": "MA-35073",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - Sequence Dynamic Pawn 바인딩 2",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35073"
+      },
+      {
+        "key": "MA-35072",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - Sequence Dynamic Pawn 바인딩 1",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35072"
+      },
+      {
+        "key": "MA-35071",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 컷신 재생 시, 다른 액터들의 visible 처리",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35071"
+      },
+      {
+        "key": "MA-35070",
+        "summary": "[비전 기획][컷신 시스템 4차] 최종 확인 - 배경을 스포너블로 처리시 시퀀스 데이터가 너무 무거운 이슈",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35070"
+      },
+      {
+        "key": "MA-35069",
+        "summary": "[비전 기획][던바튼 플레이어블 세팅 (실내) 1차] 최종 확인 - 기본 지역 세팅",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35069"
+      },
+      {
+        "key": "MA-35068",
+        "summary": "[비전 기획][던바튼 플레이어블 세팅 (실내) 1차] 최종 확인 - 카메라 작업",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35068"
+      },
+      {
+        "key": "MA-35067",
+        "summary": "[비전 기획][던바튼 플레이어블 세팅 (실내) 1차] 최종 확인 - 아트 리소스 추가",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35067"
+      },
+      {
+        "key": "MA-35066",
+        "summary": "[비전 기획][의자형(설치형) 프랍 3차] 최종 확인 - 다인용 의자 음식 쉐어링 기능 개발",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35066"
+      },
+      {
+        "key": "MA-35065",
+        "summary": "[비전 기획][의자형(설치형) 프랍 3차] 최종 확인 - 다인용 의자 시스템 개발",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35065"
+      },
+      {
+        "key": "MA-35064",
+        "summary": "[비전 기획][미니맵/확장맵/월드맵 3차] 최종 확인 - 리전 타입에 따른 지도 노출 타입",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35064"
+      },
+      {
+        "key": "MA-35063",
+        "summary": "[비전 기획][미니맵/확장맵/월드맵 3차] 최종 확인 - 인디케이터 연동",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35063"
+      },
+      {
+        "key": "MA-35062",
+        "summary": "[비전 기획][미니맵/확장맵/월드맵 3차] 최종 확인 - 실내 NPC 아이콘 출력",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35062"
+      },
+      {
+        "key": "MA-35061",
+        "summary": "[비전 기획][미니맵/확장맵/월드맵 3차] 최종 확인 - 던전 입구 항목 추가",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35061"
+      },
+      {
+        "key": "MA-35060",
+        "summary": "[비전 기획][인스턴스 던전 시스템 3차] 최종 확인 - 컨텐츠 대응",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35060"
+      },
+      {
+        "key": "MA-35059",
+        "summary": "[비전 기획][인스턴스 던전 시스템 3차] 최종 확인 - 기본 시스템",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35059"
+      },
+      {
+        "key": "MA-35058",
+        "summary": "[비전 기획][메인스트림 G0 인스턴스 던전] 최종 확인 - G0 상세 기획 및 구현",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35058"
+      },
+      {
+        "key": "MA-35057",
+        "summary": "[비전 기획][캐릭터 우클릭 메뉴 1차] 최종 확인 - 캐릭터 우클릭 메뉴 1",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35057"
+      },
+      {
+        "key": "MA-35056",
+        "summary": "[비전 기획][캐릭터 우클릭 메뉴 1차] 최종 확인 - 캐릭터 우클릭 대상 지정",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35056"
+      },
+      {
+        "key": "MA-35055",
+        "summary": "[비전 기획] [근접 전투 재능 2차] 최종 확인 -근접 재능 스킬 포팅 1차",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35055"
+      },
+      {
+        "key": "MA-35054",
+        "summary": "[비전 기획][공용 가이드 인디케이터 2차] 최종 확인 - 퀘스트 - 몬스터 사냥 목표에 대한 대응",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35054"
+      },
+      {
+        "key": "MA-35053",
+        "summary": "[비전 기획][공용 가이드 인디케이터 2차] 최종 확인 - DungeonEnter 테이블에서 EntryEntity 칼럼 확장",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35053"
+      },
+      {
+        "key": "MA-35052",
+        "summary": "[비전 기획][공용 가이드 인디케이터 2차] 최종 확인 - 퀘스트 구현에 따른 인디케이터 대응 작업",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35052"
+      },
+      {
+        "key": "MA-35051",
+        "summary": "[비전 기획][타이틀 시스템 3차] 최종 확인 -Duration 칼럼 구현",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35051"
+      },
+      {
+        "key": "MA-35050",
+        "summary": "[비전 기획][타이틀 시스템 3차] 최종 확인 - UI 분류용 Contents 칼럼 구현",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35050"
+      },
+      {
+        "key": "MA-35049",
+        "summary": "[비전 기획][타이틀 시스템 3차] 최종 확인 - 타이틀 UI 크기 개선 및 필터 및 정렬 기능 추가",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35049"
+      },
+      {
+        "key": "MA-35048",
+        "summary": "[비전 기획][타이틀 시스템 3차] 최종 확인 - 타이틀 옵션셋 적용",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35048"
+      },
+      {
+        "key": "MA-35047",
+        "summary": "[비전 기획][인터렉션 시스템 2차] 최종 확인 - 인터렉션 시스템 폴리싱",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35047"
+      },
+      {
+        "key": "MA-35046",
+        "summary": "[비전 기획][인터렉션 시스템 2차] 최종 확인 - 신규 인터렉션 타입 개발",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35046"
+      },
+      {
+        "key": "MA-35045",
+        "summary": "[비전 기획][인터렉션 시스템 2차] 최종 확인 - 인터렉션 기반 시스템",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35045"
+      },
+      {
+        "key": "MA-35044",
+        "summary": "[비전 기획][프랍 시스템 2차] 최종 확인 - 신규 프랍 기능 구현",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35044"
+      },
+      {
+        "key": "MA-35043",
+        "summary": "[비전 기획][프랍 시스템 2차] 최종 확인 - 신규 프랍 타입 구현",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35043"
+      },
+      {
+        "key": "MA-35042",
+        "summary": "[비전 기획][프랍 시스템 2차] 최종 확인 - 스테이트 프랍 폴리싱",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35042"
+      },
+      {
+        "key": "MA-35041",
+        "summary": "[비전 기획] [요리 재능 4차] 최종 확인 - 요리 아이템 개선 (번들)",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35041"
+      },
+      {
+        "key": "MA-35040",
+        "summary": "[비전 기획] [요리 재능 4차] 최종 확인 - 아이템 - 요리 옵션 표기",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35040"
+      },
+      {
+        "key": "MA-35039",
+        "summary": "[비전 기획] [요리 재능 4차] 최종 확인 - 퀄리티 기반 요리 옵션 적용",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35039"
+      },
+      {
+        "key": "MA-35038",
+        "summary": "[비전 기획] [요리 재능 4차] 최종 확인 - 점수 규칙에 따른 퀄리티 산정",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35038"
+      },
+      {
+        "key": "MA-35037",
+        "summary": "[비전 기획] [요리 재능 4차] 최종 확인 - 현재 구현된 미니게임의 점수 규칙 추가",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35037"
+      },
+      {
+        "key": "MA-35036",
+        "summary": "[비전 기획][리전 베리에이션 3차] 최종 확인 - 실내 리전 카메라 폴리싱",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35036"
+      },
+      {
+        "key": "MA-35035",
+        "summary": "[비전 기획][리전 베리에이션 3차] 최종 확인 - 공간 소개 시스템",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35035"
+      },
+      {
+        "key": "MA-35034",
+        "summary": "[비전 기획][리전 베리에이션 3차] 최종 확인 - 내부 구조 개선",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35034"
+      },
+      {
+        "key": "MA-35033",
+        "summary": "[비전 기획] [마법 재능 2차] 최종 확인 - 마법 재능 스킬 포팅 1차",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35033"
+      },
+      {
+        "key": "MA-35032",
+        "summary": "[비전 기획] [대미지 계산 2차] 최종 확인 - 전투 밸런싱",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35032"
+      },
+      {
+        "key": "MA-35031",
+        "summary": "[비전 기획] [대미지 계산 2차] 최종 확인 - 전투 로직",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35031"
+      },
+      {
+        "key": "MA-35030",
+        "summary": "[비전 기획][교역 시스템 2차] 최종 확인 - 파티 시스템 - 교역",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35030"
+      },
+      {
+        "key": "MA-35029",
+        "summary": "[비전 기획][교역 시스템 2차] 최종 확인 - 교역 상점",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35029"
+      },
+      {
+        "key": "MA-35028",
+        "summary": "[비전 기획][교역 시스템 2차] 최종 확인 - 교역소 추가",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35028"
+      },
+      {
+        "key": "MA-35027",
+        "summary": "[비전 기획][교역 시스템 2차] 최종 확인 - QTE 작업",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35027"
+      },
+      {
+        "key": "MA-35026",
+        "summary": "[비전 기획][교역 시스템 2차] 최종 확인 - 교역 탈것",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35026"
+      },
+      {
+        "key": "MA-35025",
+        "summary": "[비전 기획][교역 시스템 2차] 최종 확인 - 교역품 구매 / 판매",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35025"
+      },
+      {
+        "key": "MA-35024",
+        "summary": "[비전 기획][퀘스트 시스템 4차] 최종 확인 - 퀘스트 제작 툴",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35024"
+      },
+      {
+        "key": "MA-35023",
+        "summary": "[비전 기획][퀘스트 시스템 4차] 최종 확인 - 퀘스트 연출",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35023"
+      },
+      {
+        "key": "MA-35022",
+        "summary": "[비전 기획][퀘스트 시스템 4차] 최종 확인 - 퀘스트 연출",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35022"
+      },
+      {
+        "key": "MA-35021",
+        "summary": "[비전 기획][퀘스트 시스템 4차] 최종 확인 - 퀘스트 UI",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35021"
+      },
+      {
+        "key": "MA-35020",
+        "summary": "[비전 기획][퀘스트 시스템 4차] 최종 확인 - 퀘스트 기본",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35020"
+      },
+      {
+        "key": "MA-35019",
+        "summary": "[비전 기획] [캐릭터 스탯 2차] 최종 확인 - 전투 밸런싱",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35019"
+      },
+      {
+        "key": "MA-35018",
+        "summary": "[비전 기획] [캐릭터 스탯 2차] 최종 확인 -  캐릭터 정보 UI",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35018"
+      },
+      {
+        "key": "MA-35017",
+        "summary": "[비전 기획] [캐릭터 스탯 2차] 최종 확인 - 스탯 데이터 이관 작업",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35017"
+      },
+      {
+        "key": "MA-35016",
+        "summary": "[비전 기획] [캐릭터 스탯 2차] 최종 확인 - 스탯 시스템 구조 변경",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35016"
+      },
+      {
+        "key": "MA-35015",
+        "summary": "[비전 기획] [궁술 재능 2차] 최종 확인 - 궁술 재능 스킬 포팅 1차",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35015"
+      },
+      {
+        "key": "MA-35014",
+        "summary": "[비전 기획][교역 상점 시스템] 최종 확인 - 교역 상점",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35014"
+      },
+      {
+        "key": "MA-35013",
+        "summary": "[비전 기획][펫 시스템 3차] 최종 확인 - 전체 펫 적재",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35013"
+      },
+      {
+        "key": "MA-35012",
+        "summary": "[비전 기획][펫 시스템 3차] 최종 확인 - 펫 리소스",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35012"
+      },
+      {
+        "key": "MA-35011",
+        "summary": "[비전 기획][펫 시스템 3차] 최종 확인 - 펫 스킬 시스템",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35011"
+      },
+      {
+        "key": "MA-35010",
+        "summary": "[비전 기획][펫 시스템 3차] 최종 확인 - 펫 기반 시스템",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35010"
+      },
+      {
+        "key": "MA-35009",
+        "summary": "[비전 기획][G0 퀘스트] 최종 확인 - G0 상세 기획 및 구현",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35009"
+      },
+      {
+        "key": "MA-35008",
+        "summary": "[비전 기획][낭만섬 2차] 최종 확인 - 섬 전용 프랍 기반 시스템",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35008"
+      },
+      {
+        "key": "MA-35007",
+        "summary": "[비전 기획][낭만섬 2차] 최종 확인 - 지형 변경 및 테마 변경",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35007"
+      },
+      {
+        "key": "MA-35006",
+        "summary": "[비전 기획][낭만섬 2차] 최종 확인 - 기반 작업",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35006"
+      },
+      {
+        "key": "MA-35005",
+        "summary": "[비전 기획] [가공 시스템] 최종 확인 - 아이템 등급",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35005"
+      },
+      {
+        "key": "MA-35004",
+        "summary": "[비전 기획] [가공 시스템] 최종 확인 - 연속 제작 일시 중지 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35004"
+      },
+      {
+        "key": "MA-35003",
+        "summary": "[비전 기획] [가공 시스템] 최종 확인 - 자동 장착 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35003"
+      },
+      {
+        "key": "MA-35002",
+        "summary": "[비전 기획] [가공 시스템] 최종 확인 - 스태미나 소모 추가",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35002"
+      },
+      {
+        "key": "MA-35001",
+        "summary": "[비전 기획] [가공 시스템] 최종 확인 - 제작 실패 시, 돌려받을 아이템 확정",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35001"
+      },
+      {
+        "key": "MA-35000",
+        "summary": "[비전 기획][채집 시스템] 최종 확인 - 데이터 개선 & 미구현 기능 개발 완료",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-35000"
+      },
+      {
+        "key": "MA-34999",
+        "summary": "[비전 기획][채집 시스템] 최종 확인 - 스킬 미보유시의 처리",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34999"
+      },
+      {
+        "key": "MA-34998",
+        "summary": "[비전 기획][채집 시스템] 최종 확인 - 자동 장착 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34998"
+      },
+      {
+        "key": "MA-34997",
+        "summary": "[비전 기획][채집 시스템] 최종 확인 - 생활 자동 채집 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34997"
+      },
+      {
+        "key": "MA-34996",
+        "summary": "[비전 기획][채집 시스템] 최종 확인 - 미니게임 스킵 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34996"
+      },
+      {
+        "key": "MA-34995",
+        "summary": "[비전 기획][제작 시스템] 최종 확인 -  자동 장착 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34995"
+      },
+      {
+        "key": "MA-34994",
+        "summary": "[비전 기획][제작 시스템] 최종 확인 -  UI 카테고리 기능",
+        "assignee": "유기안 [ana051670]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34994"
+      },
+      {
+        "key": "MA-34993",
+        "summary": "[비전 기획][체인 재능] 최종 확인 - 체인 재능 스킬 포팅",
+        "assignee": "허채령 [chaeryunghuh]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34993"
+      },
+      {
+        "key": "MA-34982",
+        "summary": "[비전 캐모] [센마이] NPC 플레타 우비 - 라브",
+        "assignee": "신용우2 [yultu]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34982"
+      },
+      {
+        "key": "MA-34937",
+        "summary": "TestK",
+        "assignee": "홍세화 [sehong]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34937"
+      },
+      {
+        "key": "MA-34907",
+        "summary": "[비전 기획] 문하이드(튜토리얼 지역) 컷신",
+        "assignee": "서지민 [polokkk]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34907"
+      },
+      {
+        "key": "MA-34906",
+        "summary": "[문하이드 계곡(튜토리얼 지역) 플레이어블 세팅 1차] 컷신",
+        "assignee": "서지민 [polokkk]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34906"
+      },
+      {
+        "key": "MA-34905",
+        "summary": "[비전 기획] 티르 코네일 컷신",
+        "assignee": "김현준5 [khj79]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34905"
+      },
+      {
+        "key": "MA-34904",
+        "summary": "[티르 코네일 플레이어블 (실내) 1차] 티르 코네일 컷신",
+        "assignee": "김현준5 [khj79]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34904"
+      },
+      {
+        "key": "MA-34903",
+        "summary": "[비전 기획] 요리 컷신",
+        "assignee": "고세영 [neomenia527]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34903"
+      },
+      {
+        "key": "MA-34902",
+        "summary": "[비전 기획] 펫 컷신",
+        "assignee": "서지민 [polokkk]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34902"
+      },
+      {
+        "key": "MA-34899",
+        "summary": "[비전 기획] 알비 컷신 2종(일반, 어려움)",
+        "assignee": "김현준5 [khj79]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34899"
+      },
+      {
+        "key": "MA-34898",
+        "summary": "[비전 기획] 몽라 컷신",
+        "assignee": "김현준5 [khj79]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34898"
+      },
+      {
+        "key": "MA-34897",
+        "summary": "[기본 생활 시스템 3차] 이펙트 작업",
+        "assignee": "고세영 [neomenia527]",
+        "status": "(MA) Backlog",
+        "link": "https://jiralive.nexon.com/browse/MA-34897"
+      }
+    ]
+  }
+]
