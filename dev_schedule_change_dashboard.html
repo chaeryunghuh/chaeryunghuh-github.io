@@ -1,59 +1,29 @@
 
-    <!DOCTYPE html>
-    <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>일정 변동 일감 리스트</title>
-        
+    <!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>일정 변동 일감 리스트</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; background-color: #f7f7f7; color: #333; margin: 20px; }
         .dashboard-container { background-color: white; border: 1px solid #e1e4e8; border-radius: 8px; padding: 24px; max-width: 900px; margin: auto; }
         h1, h2 { border-bottom: 1px solid #eaecef; padding-bottom: 0.5em; font-weight: 600; }
-        h1 { font-size: 2em; }
-        h2 { font-size: 1.5em; margin-top: 1.5em; }
+        h1 { font-size: 2em; } h2 { font-size: 1.5em; margin-top: 1.5em; }
         .change-summary { font-size: 1.1em; font-weight: bold; color: #0366d6; margin-bottom: 1em; }
         .issue-list { list-style-type: none; padding: 0; }
-        .issue-item { background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; padding: 12px; margin-bottom: 8px; }
-        .issue-item a { text-decoration: none; color: #0366d6; font-weight: 500; }
-        .issue-item a:hover { text-decoration: underline; }
-        .error-message { color: #d73a49; font-weight: bold; }
+        .issue-item { display: flex; justify-content: space-between; align-items: center; background-color: #f6f8fa; border: 1px solid #d1d5da; border-radius: 6px; padding: 12px; margin-bottom: 8px; }
+        .issue-info a { text-decoration: none; color: #0366d6; font-weight: 500; }
+        .issue-info a:hover { text-decoration: underline; }
+        .change-details { font-family: monospace; background-color: #e1e4e8; padding: 4px 8px; border-radius: 4px; font-size: 0.9em; }
         .epic-header { font-size: 0.9em; color: #586069; margin-bottom: 1em; }
         .epic-header span { font-weight: 600; }
     </style>
-    
     </head>
     <body>
         <div class="dashboard-container">
             <h1>[03/16~03/20] (개발 1주차)<br>일정 변동 일감 리스트</h1>
             <h2>2026-03-17 변경 내역</h2>
             <div class="change-summary">총 0건 변경되었습니다.</div>
-            <div class="epic-header">
-                ✨ <span>추적 대상 FixVersion: ME_M6_2606</span>
-            </div>
+            <div class="epic-header">✨ <span>추적 대상 FixVersion: ME_M6_2606</span></div>
             <ul class="issue-list">
-                <li class="issue-item error-message">Jira 데이터 로딩 실패: JiraError HTTP 400 url: https://jiralive.nexon.com/rest/api/2/search?jql=%0A++++++++++++fixVersion+%3D+%22ME_M6_2606%22+AND+%0A++++++++++++issuetype+in+%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C+%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C+%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C+%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C+%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29+AND%0A++++++++++++%22MABI_%EC%A2%85%EB%A3%8C%EC%9D%BC%22+CHANGED+DURING+%28startOfDay%28%29%2C+endOfDay%28%29%29%0A++++++++&startAt=0&validateQuery=True&fields=%2Aall&expand=changelog&maxResults=100
-	text: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>400 400</title>
-</head><body>
-<h1>400</h1>
-<p>Your browser sent a request that this server could not understand.<br />
-</p>
-</body></html>
-
-	
-	response headers = {'Date': 'Tue, 17 Mar 2026 08:11:35 GMT', 'Content-Type': 'text/html; charset=iso-8859-1', 'Content-Length': '210', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': '9dda8719b8e4ea96-ICN'}
-	response text = <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>400 400</title>
-</head><body>
-<h1>400</h1>
-<p>Your browser sent a request that this server could not understand.<br />
-</p>
-</body></html>
-</li>
+                <li>어제와 비교하여 종료일이 변경된 일감이 없습니다.</li>
             </ul>
         </div>
-    </body>
-    </html>
+    </body></html>
     
