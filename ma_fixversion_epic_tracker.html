@@ -17,7 +17,7 @@
     ]},
     options: {
         responsive: true, maintainAspectRatio: false,
-        scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } },
+        scales: { y: { beginAtZero: true, ticks: { stepSize: 1, callback: function(value) { if (Number.isInteger(value)) { return value; } } } } },
         onClick: (e,l)=>{'{'}if(l.length>0){'{'}const t=l[0].index,d=epicChangeChart.data.labels[t];document.querySelectorAll(".detail-section").forEach(e=>{'{'}e.style.display="none"}});const o=document.getElementById("detail-"+d);o&&(o.style.display="block")}}{'}
     }
     });</script>
