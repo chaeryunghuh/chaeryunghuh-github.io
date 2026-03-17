@@ -1,0 +1,70 @@
+
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Epic 완료일 변동성 체크</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; }
+            .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            h2 { color: #333; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Epic 완료일 변동성 체크 (fixVersion: ME_M6_2606)</h2>
+            <canvas id="epicChart"></canvas>
+        </div>
+        <script>
+            const ctx = document.getElementById('epicChart').getContext('2d');
+            const labels = ["W11", "W12", "W13", "W14", "W15", "W16", "W17", "W18", "W19", "W20", "W21", "W22", "W23", "W24", "W25", "W26"];
+            const todayData = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+            
+            let lastWeekData = JSON.parse(localStorage.getItem('lastWeekEpicData')) || [];
+            
+            const dayOfWeek = new Date().getDay();
+            if (dayOfWeek === 5) { // 5 = Friday
+                localStorage.setItem('lastWeekEpicData', JSON.stringify(todayData));
+                lastWeekData = todayData;
+            }
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: '지난 주 (Friday)',
+                            data: lastWeekData,
+                            borderColor: 'rgba(28, 180, 133, 0.7)',
+                            backgroundColor: 'rgba(28, 180, 133, 0.1)',
+                            fill: true,
+                            tension: 0.1
+                        },
+                        {
+                            label: '오늘 (Today)',
+                            data: todayData,
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            fill: true,
+                            tension: 0.1
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: { display: true, text: '주차별 누적 Epic 완료 예상 개수' },
+                        tooltip: { mode: 'index' },
+                    },
+                    scales: {
+                        x: { title: { display: true, text: '주차 (Week)' } },
+                        y: { title: { display: true, text: '누적 Epic 개수' }, beginAtZero: true }
+                    }
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
