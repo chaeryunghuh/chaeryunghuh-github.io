@@ -22,9 +22,26 @@
         .bar-chart { flex-grow: 1; display: flex; height: 100%; border-radius: 4px; overflow: hidden; background-color: #e9ecef; }
         .bar { display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-size: 11px; font-weight: bold; transition: opacity 0.2s; cursor: pointer; text-decoration: none; }
         .bar:hover { opacity: 0.8; }
-        .bar.incomplete { background-color: #adb5bd; }
+        .bar.incomplete { background-color: #adb5bd; } /* 회색 미완료 바 */
+        .bar.incomplete.lagging { background-color: #d9534f; } /* 빨간색 지연 바 */
         .bar.completed { background-color: #28a745; }
         .bar-total { font-size: 13px; font-weight: bold; color: #333; min-width: 30px; text-align: left; text-decoration: none; }
+        .benchmark-bar {
+            margin: 15px 0;
+            border-top: 2px dashed #007bff;
+            position: relative;
+            text-align: center;
+        }
+        .benchmark-label {
+            background-color: #fff;
+            padding: 0 10px;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 12px;
+            position: relative;
+            top: -11px;
+            display: inline-block;
+        }
     </style>
     
     </head>
@@ -32,167 +49,171 @@
         <div class="dashboard-wrapper">
             <h2>대분류 별 업무 완료 현황</h2>
             <div class="chart-container">
-            <div class="bar-wrapper">
-                <div class="bar-label" title="아웃게임">아웃게임</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9B%83%EA%B2%8C%EC%9E%84%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 75.0%;">6</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9B%83%EA%B2%8C%EC%9E%84%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 25.0%;">2</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9B%83%EA%B2%8C%EC%9E%84%22" target="_blank" class="bar-total">8</a>
+        <div class="bar-wrapper">
+            <div class="bar-label" title="아웃게임">아웃게임 (75.0%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9B%83%EA%B2%8C%EC%9E%84%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 75.0%;">6</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9B%83%EA%B2%8C%EC%9E%84%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 25.0%;">2</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="치장">치장</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%B9%98%EC%9E%A5%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 60.0%;">6</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%B9%98%EC%9E%A5%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 40.0%;">4</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%B9%98%EC%9E%A5%22" target="_blank" class="bar-total">10</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9B%83%EA%B2%8C%EC%9E%84%22" target="_blank" class="bar-total">8</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="치장">치장 (60.0%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%B9%98%EC%9E%A5%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 60.0%;">6</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%B9%98%EC%9E%A5%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 40.0%;">4</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="UI">UI</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22UI%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 55.55555555555556%;">10</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22UI%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 44.44444444444444%;">8</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22UI%22" target="_blank" class="bar-total">18</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%B9%98%EC%9E%A5%22" target="_blank" class="bar-total">10</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="UI">UI (55.6%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22UI%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 55.55555555555556%;">10</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22UI%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 44.44444444444444%;">8</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="기술">기술</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EC%88%A0%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 52.94117647058824%;">9</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EC%88%A0%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 47.05882352941176%;">8</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EC%88%A0%22" target="_blank" class="bar-total">17</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22UI%22" target="_blank" class="bar-total">18</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="기술">기술 (52.9%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EC%88%A0%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 52.94117647058824%;">9</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EC%88%A0%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 47.05882352941176%;">8</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="생활">생활</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%83%9D%ED%99%9C%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 50.943396226415096%;">27</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%83%9D%ED%99%9C%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 49.056603773584904%;">26</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%83%9D%ED%99%9C%22" target="_blank" class="bar-total">53</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EC%88%A0%22" target="_blank" class="bar-total">17</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="생활">생활 (50.9%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%83%9D%ED%99%9C%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 50.943396226415096%;">27</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%83%9D%ED%99%9C%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 49.056603773584904%;">26</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="사운드">사운드</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%82%AC%EC%9A%B4%EB%93%9C%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 50.0%;">3</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%82%AC%EC%9A%B4%EB%93%9C%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 50.0%;">3</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%82%AC%EC%9A%B4%EB%93%9C%22" target="_blank" class="bar-total">6</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%83%9D%ED%99%9C%22" target="_blank" class="bar-total">53</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="사운드">사운드 (50.0%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%82%AC%EC%9A%B4%EB%93%9C%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 50.0%;">3</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%82%AC%EC%9A%B4%EB%93%9C%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 50.0%;">3</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="기반시스템">기반시스템</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%8A%A4%ED%85%9C%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 49.64028776978417%;">69</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%8A%A4%ED%85%9C%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 50.35971223021583%;">70</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%8A%A4%ED%85%9C%22" target="_blank" class="bar-total">139</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%82%AC%EC%9A%B4%EB%93%9C%22" target="_blank" class="bar-total">6</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="기반시스템">기반시스템 (49.6%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%8A%A4%ED%85%9C%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 49.64028776978417%;">69</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%8A%A4%ED%85%9C%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 50.35971223021583%;">70</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="아이템">아이템</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9D%B4%ED%85%9C%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 48.275862068965516%;">14</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9D%B4%ED%85%9C%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 51.724137931034484%;">15</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9D%B4%ED%85%9C%22" target="_blank" class="bar-total">29</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%EB%B0%98%EC%8B%9C%EC%8A%A4%ED%85%9C%22" target="_blank" class="bar-total">139</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="아이템">아이템 (48.3%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9D%B4%ED%85%9C%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 48.275862068965516%;">14</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9D%B4%ED%85%9C%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 51.724137931034484%;">15</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="캐릭터">캐릭터</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%BA%90%EB%A6%AD%ED%84%B0%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 44.0%;">11</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%BA%90%EB%A6%AD%ED%84%B0%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 56.00000000000001%;">14</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%BA%90%EB%A6%AD%ED%84%B0%22" target="_blank" class="bar-total">25</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%95%84%EC%9D%B4%ED%85%9C%22" target="_blank" class="bar-total">29</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="캐릭터">캐릭터 (44.0%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%BA%90%EB%A6%AD%ED%84%B0%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 44.0%;">11</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%BA%90%EB%A6%AD%ED%84%B0%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 56.00000000000001%;">14</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="전투">전투</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A0%84%ED%88%AC%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 40.0%;">26</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A0%84%ED%88%AC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 60.0%;">39</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A0%84%ED%88%AC%22" target="_blank" class="bar-total">65</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%BA%90%EB%A6%AD%ED%84%B0%22" target="_blank" class="bar-total">25</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="전투">전투 (40.0%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A0%84%ED%88%AC%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 40.0%;">26</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A0%84%ED%88%AC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 60.0%;">39</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="인벤토리">인벤토리</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 37.5%;">3</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 62.5%;">5</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%22" target="_blank" class="bar-total">8</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A0%84%ED%88%AC%22" target="_blank" class="bar-total">65</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="인벤토리">인벤토리 (37.5%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 37.5%;">3</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 62.5%;">5</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="NPC">NPC</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22NPC%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 35.294117647058826%;">6</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22NPC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 64.70588235294117%;">11</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22NPC%22" target="_blank" class="bar-total">17</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC%22" target="_blank" class="bar-total">8</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="NPC">NPC (35.3%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22NPC%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 35.294117647058826%;">6</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22NPC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 64.70588235294117%;">11</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="퀘스트">퀘스트</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%80%98%EC%8A%A4%ED%8A%B8%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 31.57894736842105%;">6</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%80%98%EC%8A%A4%ED%8A%B8%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 68.42105263157895%;">13</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%80%98%EC%8A%A4%ED%8A%B8%22" target="_blank" class="bar-total">19</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22NPC%22" target="_blank" class="bar-total">17</a>
+        </div>
+        
+        <div class="benchmark-bar">
+             <span class="benchmark-label">전체 Epic 진행률: 34.3% (229/667)</span>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="퀘스트">퀘스트 (31.6%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%80%98%EC%8A%A4%ED%8A%B8%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 31.57894736842105%;">6</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%80%98%EC%8A%A4%ED%8A%B8%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 68.42105263157895%;">13</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="인스턴스던전">인스턴스던전</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%8D%98%EC%A0%84%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 21.818181818181817%;">12</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%8D%98%EC%A0%84%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 78.18181818181819%;">43</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%8D%98%EC%A0%84%22" target="_blank" class="bar-total">55</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%80%98%EC%8A%A4%ED%8A%B8%22" target="_blank" class="bar-total">19</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="인스턴스던전">인스턴스던전 (21.8%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%8D%98%EC%A0%84%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 21.818181818181817%;">12</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%8D%98%EC%A0%84%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 78.18181818181819%;">43</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="일반콘텐츠">일반콘텐츠</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 14.285714285714285%;">1</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 85.71428571428571%;">6</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22" target="_blank" class="bar-total">7</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%8D%98%EC%A0%84%22" target="_blank" class="bar-total">55</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="일반콘텐츠">일반콘텐츠 (14.3%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 14.285714285714285%;">1</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 85.71428571428571%;">6</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="펫">펫</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 12.5%;">1</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 87.5%;">7</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22" target="_blank" class="bar-total">8</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22" target="_blank" class="bar-total">7</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="펫">펫 (12.5%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 12.5%;">1</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 87.5%;">7</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="지역">지역</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 11.875%;">19</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 88.125%;">141</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22" target="_blank" class="bar-total">160</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22" target="_blank" class="bar-total">8</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="지역">지역 (11.9%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 11.875%;">19</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 88.125%;">141</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="메인스트림">메인스트림</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EB%A9%94%EC%9D%B8%EC%8A%A4%ED%8A%B8%EB%A6%BC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 100.0%;">19</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EB%A9%94%EC%9D%B8%EC%8A%A4%ED%8A%B8%EB%A6%BC%22" target="_blank" class="bar-total">19</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22" target="_blank" class="bar-total">160</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="메인스트림">메인스트림 (0.0%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EB%A9%94%EC%9D%B8%EC%8A%A4%ED%8A%B8%EB%A6%BC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 100.0%;">19</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="BM">BM</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22BM%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 100.0%;">3</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22BM%22" target="_blank" class="bar-total">3</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EB%A9%94%EC%9D%B8%EC%8A%A4%ED%8A%B8%EB%A6%BC%22" target="_blank" class="bar-total">19</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="BM">BM (0.0%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22BM%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 100.0%;">3</a>
             </div>
-            
-            <div class="bar-wrapper">
-                <div class="bar-label" title="기타">기타</div>
-                <div class="bar-chart">
-            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 100.0%;">1</a>
-                </div>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22" target="_blank" class="bar-total">1</a>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22BM%22" target="_blank" class="bar-total">3</a>
+        </div>
+        
+        <div class="bar-wrapper">
+            <div class="bar-label" title="기타">기타 (0.0%)</div>
+            <div class="bar-chart">
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 100.0%;">1</a>
             </div>
-            </div>
-            <p style="font-size: 12px; color: #888; text-align: right; margin-top: 15px;">Last updated: 2026-03-18 15:45:14</p>
+            <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22" target="_blank" class="bar-total">1</a>
+        </div>
+        </div>
+            <p style="font-size: 12px; color: #888; text-align: right; margin-top: 15px;">Last updated: 2026-03-19 19:24:38</p>
         </div>
     </body>
     </html>
