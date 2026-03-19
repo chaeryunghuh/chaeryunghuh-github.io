@@ -8,46 +8,23 @@
     <style>
         body { font-family: 'Malgun Gothic', sans-serif; margin: 0; padding: 20px; background-color: #fff; }
         .dashboard-wrapper { max-width: 800px; margin: 0 auto; }
-        h2 { 
-            color: #333; 
-            text-align: center;
-            font-size: 1.6em;
-            font-weight: 600;
-            margin-top: 0; 
-            margin-bottom: 25px;
-        }
-        .chart-container { display: flex; flex-direction: column; gap: 8px; }
+        .chart-container { display: flex; flex-direction: column; gap: 8px; margin-top: 25px; }
         .bar-wrapper { display: flex; align-items: center; gap: 10px; height: 24px; }
         .bar-label { width: 150px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; color: #555; }
         .bar-chart { flex-grow: 1; display: flex; height: 100%; border-radius: 4px; overflow: hidden; background-color: #e9ecef; }
         .bar { display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-size: 11px; font-weight: bold; transition: opacity 0.2s; cursor: pointer; text-decoration: none; }
         .bar:hover { opacity: 0.8; }
-        .bar.incomplete { background-color: #adb5bd; } /* 회색 미완료 바 */
-        .bar.incomplete.lagging { background-color: #d9534f; } /* 빨간색 지연 바 */
+        .bar.incomplete { background-color: #adb5bd; }
+        .bar.incomplete.lagging { background-color: #d9534f; } /* 20%p 이상 지연 시 빨간색 */
         .bar.completed { background-color: #28a745; }
+        .bar.expected { background-color: #007bff; } /* 기대 진행률 파란색 */
         .bar-total { font-size: 13px; font-weight: bold; color: #333; min-width: 30px; text-align: left; text-decoration: none; }
-        .benchmark-bar {
-            margin: 15px 0;
-            border-top: 2px dashed #007bff;
-            position: relative;
-            text-align: center;
-        }
-        .benchmark-label {
-            background-color: #fff;
-            padding: 0 10px;
-            color: #007bff;
-            font-weight: bold;
-            font-size: 12px;
-            position: relative;
-            top: -11px;
-            display: inline-block;
-        }
+        .benchmark-wrapper { margin: 15px 0; }
     </style>
     
     </head>
     <body>
         <div class="dashboard-wrapper">
-            <h2>대분류 별 업무 완료 현황</h2>
             <div class="chart-container">
         <div class="bar-wrapper">
             <div class="bar-label" title="아웃게임">아웃게임 (75.0%)</div>
@@ -145,10 +122,6 @@
             <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22NPC%22" target="_blank" class="bar-total">17</a>
         </div>
         
-        <div class="benchmark-bar">
-             <span class="benchmark-label">전체 Epic 진행률: 34.3% (229/667)</span>
-        </div>
-        
         <div class="bar-wrapper">
             <div class="bar-label" title="퀘스트">퀘스트 (31.6%)</div>
             <div class="bar-chart">
@@ -168,7 +141,7 @@
         <div class="bar-wrapper">
             <div class="bar-label" title="일반콘텐츠">일반콘텐츠 (14.3%)</div>
             <div class="bar-chart">
-        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 14.285714285714285%;">1</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 85.71428571428571%;">6</a>
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 14.285714285714285%;">1</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 85.71428571428571%;">6</a>
             </div>
             <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%9D%BC%EB%B0%98%EC%BD%98%ED%85%90%EC%B8%A0%22" target="_blank" class="bar-total">7</a>
         </div>
@@ -176,7 +149,7 @@
         <div class="bar-wrapper">
             <div class="bar-label" title="펫">펫 (12.5%)</div>
             <div class="bar-chart">
-        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 12.5%;">1</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 87.5%;">7</a>
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 12.5%;">1</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 87.5%;">7</a>
             </div>
             <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%ED%8E%AB%22" target="_blank" class="bar-total">8</a>
         </div>
@@ -184,15 +157,24 @@
         <div class="bar-wrapper">
             <div class="bar-label" title="지역">지역 (11.9%)</div>
             <div class="bar-chart">
-        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 11.875%;">19</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 88.125%;">141</a>
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar completed" style="width: 11.875%;">19</a><a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 88.125%;">141</a>
             </div>
             <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EC%A7%80%EC%97%AD%22" target="_blank" class="bar-total">160</a>
+        </div>
+        
+        <div class="benchmark-wrapper bar-wrapper">
+            <div class="bar-label" style="font-weight:bold;">개발 진행률 (2.8%)</div>
+            <div class="bar-chart">
+                <div class="bar expected" style="width: 2.8301886792452833%;"></div>
+                <div class="bar incomplete" style="width: 97.16981132075472%;"></div>
+            </div>
+            <div class="bar-total" style="color:transparent;">0</div>
         </div>
         
         <div class="bar-wrapper">
             <div class="bar-label" title="메인스트림">메인스트림 (0.0%)</div>
             <div class="bar-chart">
-        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EB%A9%94%EC%9D%B8%EC%8A%A4%ED%8A%B8%EB%A6%BC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 100.0%;">19</a>
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EB%A9%94%EC%9D%B8%EC%8A%A4%ED%8A%B8%EB%A6%BC%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 100.0%;">19</a>
             </div>
             <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EB%A9%94%EC%9D%B8%EC%8A%A4%ED%8A%B8%EB%A6%BC%22" target="_blank" class="bar-total">19</a>
         </div>
@@ -200,7 +182,7 @@
         <div class="bar-wrapper">
             <div class="bar-label" title="BM">BM (0.0%)</div>
             <div class="bar-chart">
-        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22BM%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 100.0%;">3</a>
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22BM%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 100.0%;">3</a>
             </div>
             <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22BM%22" target="_blank" class="bar-total">3</a>
         </div>
@@ -208,12 +190,12 @@
         <div class="bar-wrapper">
             <div class="bar-label" title="기타">기타 (0.0%)</div>
             <div class="bar-chart">
-        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete lagging" style="width: 100.0%;">1</a>
+        <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EC%9E%91%EC%97%85%20%EC%99%84%EB%A3%8C%22%2C%20%22%28MA%29%20%EB%A6%B4%EB%A6%AC%EC%A6%88/%EC%99%84%EB%A3%8C%22%29" target="_blank" class="bar incomplete" style="width: 100.0%;">1</a>
             </div>
             <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20MA%20AND%20issuetype%20%3D%20Epic%20AND%20cf%5B16702%5D%20%3D%20%22%EA%B8%B0%ED%83%80%22" target="_blank" class="bar-total">1</a>
         </div>
         </div>
-            <p style="font-size: 12px; color: #888; text-align: right; margin-top: 15px;">Last updated: 2026-03-19 19:28:12</p>
+            <p style="font-size: 12px; color: #888; text-align: right; margin-top: 15px;">Last updated: 2026-03-19 19:50:18</p>
         </div>
     </body>
     </html>
