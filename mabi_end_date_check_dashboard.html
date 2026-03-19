@@ -15,7 +15,7 @@
         .bar-link:hover .bar-segment { opacity: 0.85; }
         .bar-green { background-color: #28a745; }
         .bar-red { background-color: #dc3545; }
-        .label { min-width: 120px; font-weight: bold; }
+        .label { min-width: 110px; font-weight: bold; text-align: center; margin-right: 10px; }
         .percentage { margin-left: 15px; font-size: 20px; font-weight: bold; }
         .issue-list { display: none; margin-top: 15px; border: 1px solid #ddd; border-radius: 5px; padding: 10px; max-height: 400px; overflow-y: auto; }
         table { width: 100%; border-collapse: collapse; }
@@ -29,7 +29,7 @@
     <body>
         <div class="dashboard-container">
             <div class="progress-bar-container">
-                <span class="label">완료일 등록 여부 :</span>
+                <span class="label">완료일 등록 여부</span>
                 <div class="progress-bar">
                     <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5Bcustomfield_14511%5D%20IS%20NOT%20EMPTY" target="_blank" class="bar-link" style="width: 81.97562540089801%;" onclick="toggleList(event, 'list-with-date')" title="등록됨: 1278건">
                         <div class="bar-segment bar-green">1278</div>
@@ -52,7 +52,6 @@
         
     <script>
         function toggleList(event, listId) {
-            // event.preventDefault(); // a 태그의 기본 동작(새 탭 열기)을 막지 않으려면 주석 처리
             var list = document.getElementById(listId);
             var otherListId = listId === 'list-with-date' ? 'list-without-date' : 'list-with-date';
             var otherList = document.getElementById(otherListId);
