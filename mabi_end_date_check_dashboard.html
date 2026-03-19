@@ -30,10 +30,10 @@
         <div class="progress-bar-container">
             <span class="label">완료일<br>등록 여부</span>
             <div class="progress-bar">
-                <a id="link-with-date" href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5Bcustomfield_14511%5D%20IS%20NOT%20EMPTY" target="_blank" class="bar-link" style="width: 81.97562540089801%;" title="등록됨: 1278건">
+                <a id="link-with-date" href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5B14511%5D%20IS%20NOT%20EMPTY" target="_blank" class="bar-link" style="width: 81.97562540089801%;" title="등록됨: 1278건">
                     <div class="bar-segment bar-green">1278</div>
                 </a>
-                <a id="link-without-date" href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5Bcustomfield_14511%5D%20IS%20EMPTY" target="_blank" class="bar-link" style="width: 18.02437459910199%;" title="미등록: 281건">
+                <a id="link-without-date" href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5B14511%5D%20IS%20EMPTY" target="_blank" class="bar-link" style="width: 18.02437459910199%;" title="미등록: 281건">
                     <div class="bar-segment bar-red">281</div>
                 </a>
             </div>
@@ -60,7 +60,6 @@
             }
         }
 
-        // 페이지 로드 후 이벤트 리스너를 설정
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('link-with-date').addEventListener('click', function() {
                 toggleList('list-with-date');
