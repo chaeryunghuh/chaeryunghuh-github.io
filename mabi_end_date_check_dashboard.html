@@ -7,18 +7,16 @@
         
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 20px; background-color: #ffffff; }
-        /* .dashboard-container를 제거하고 body에 직접 스타일 적용 */
         .progress-bar-container { display: flex; align-items: center; margin: 20px auto; max-width: 800px; }
         .progress-bar { display: flex; width: 100%; height: 40px; border-radius: 8px; overflow: hidden; }
         .bar-link { display: flex; text-decoration: none; color: white; }
         .bar-segment { display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 16px; transition: opacity 0.3s; cursor: pointer; width: 100%; }
         .bar-link:hover .bar-segment { opacity: 0.85; }
-        .bar-green { background-color: #2ca04a; } /* 이미지의 녹색 */
-        .bar-red { background-color: #e54d42; }   /* 이미지의 적색 */
+        .bar-green { background-color: #2ca04a; }
+        .bar-red { background-color: #e54d42; }
         .label { min-width: 80px; font-weight: bold; text-align: center; margin-right: 15px; line-height: 1.3; }
         .percentage { margin-left: 15px; font-size: 20px; font-weight: bold; color: #333; }
         .issue-list { margin-top: 15px; border: 1px solid #ddd; border-radius: 5px; padding: 10px; max-height: 400px; overflow-y: auto; max-width: 800px; margin-left: auto; margin-right: auto; }
-        /* 숨겨진 리스트는 기본으로 보이지 않게 처리 */
         .hidden { display: none; }
         table { width: 100%; border-collapse: collapse; }
         th, td { text-align: left; padding: 8px; border-bottom: 1px solid #ddd; }
@@ -32,10 +30,10 @@
         <div class="progress-bar-container">
             <span class="label">완료일<br>등록 여부</span>
             <div class="progress-bar">
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5Bcustomfield_14511%5D%20IS%20NOT%20EMPTY" target="_blank" class="bar-link" style="width: 81.97562540089801%;" onclick="toggleList(event, 'list-with-date')" title="등록됨: 1278건">
+                <a id="link-with-date" href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5Bcustomfield_14511%5D%20IS%20NOT%20EMPTY" target="_blank" class="bar-link" style="width: 81.97562540089801%;" title="등록됨: 1278건">
                     <div class="bar-segment bar-green">1278</div>
                 </a>
-                <a href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5Bcustomfield_14511%5D%20IS%20EMPTY" target="_blank" class="bar-link" style="width: 18.02437459910199%;" onclick="toggleList(event, 'list-without-date')" title="미등록: 281건">
+                <a id="link-without-date" href="https://jiralive.nexon.com/issues/?jql=project%20%3D%20%22MA%22%20AND%20fixVersion%20%3D%20%22ME_M6_2606%22%20AND%20issuetype%20in%20%28%22%EB%B9%84%EC%A0%84%EA%B8%B0%ED%9A%8D%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84UI%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%95%84%ED%8A%B8%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EA%B0%9C%EB%B0%9C%28Sub%29%22%2C%20%22%EB%B9%84%EC%A0%84%EC%82%AC%EC%9A%B4%EB%93%9C%28Sub%29%22%29%20AND%20status%20not%20in%20%28%22%28MA%29%20%EB%93%9C%EB%9E%8D%22%2C%20%22%28MA%29%20%EB%B3%B4%EB%A5%98%22%29%20AND%20cf%5Bcustomfield_14511%5D%20IS%20EMPTY" target="_blank" class="bar-link" style="width: 18.02437459910199%;" title="미등록: 281건">
                     <div class="bar-segment bar-red">281</div>
                 </a>
             </div>
@@ -51,17 +49,26 @@
         </div>
         
     <script>
-        function toggleList(event, listId) {
+        function toggleList(listId) {
             var list = document.getElementById(listId);
             var otherListId = listId === 'list-with-date' ? 'list-without-date' : 'list-with-date';
             var otherList = document.getElementById(otherListId);
             
-            // classList.toggle을 사용하여 'hidden' 클래스를 제어
             list.classList.toggle('hidden');
             if (!otherList.classList.contains('hidden')) {
                 otherList.classList.add('hidden');
             }
         }
+
+        // 페이지 로드 후 이벤트 리스너를 설정
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('link-with-date').addEventListener('click', function() {
+                toggleList('list-with-date');
+            });
+            document.getElementById('link-without-date').addEventListener('click', function() {
+                toggleList('list-without-date');
+            });
+        });
     </script>
     
     </body>
